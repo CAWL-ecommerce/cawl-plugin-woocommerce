@@ -48,9 +48,9 @@ class HostedTokenizationGatewayModule implements ExecutableModule, ServiceModule
             $getModuleAssetUrl = $container->get('assets.get_module_asset_url');
             $assetManager->register((new Script("{$moduleName}", $getModuleAssetUrl($moduleName, 'frontend-main.js'), Asset::FRONTEND))->withLocalize('WlopHtConfig', function () use($container) : array {
                 return $this->makeFrontendConfig($container);
-            })->withTranslation('cawl-for-woocommerce', \WP_PLUGIN_DIR . '/cawl-for-woocommerce/languages/'), (new Script("{$moduleName}-blocks", $getModuleAssetUrl($moduleName, 'frontend-blocks.js'), Asset::FRONTEND))->withLocalize('WlopHtConfig', function () use($container) : array {
+            })->withTranslation('cawl-for-woocommerce', \WP_PLUGIN_DIR . '/cawl/languages/'), (new Script("{$moduleName}-blocks", $getModuleAssetUrl($moduleName, 'frontend-blocks.js'), Asset::FRONTEND))->withLocalize('WlopHtConfig', function () use($container) : array {
                 return $this->makeFrontendConfig($container);
-            })->withTranslation('cawl-for-woocommerce', \WP_PLUGIN_DIR . '/cawl-for-woocommerce/languages/'), new Script('wlop-tokenizer', $container->get('config.api_endpoint') . '/hostedtokenization/js/client/tokenizer.min.js', Asset::FRONTEND));
+            })->withTranslation('cawl-for-woocommerce', \WP_PLUGIN_DIR . '/cawl/languages/'), new Script('wlop-tokenizer', $container->get('config.api_endpoint') . '/hostedtokenization/js/client/tokenizer.min.js', Asset::FRONTEND));
         });
         \add_action('wp_ajax_wlop_hosted_tokenization_config', function () use($container) {
             $this->handleConfigAjax($container);

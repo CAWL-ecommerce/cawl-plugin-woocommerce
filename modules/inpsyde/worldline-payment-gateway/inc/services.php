@@ -82,7 +82,7 @@ return static function () : array {
         }),
         "payment_gateway.{$gatewayId}.refund_processor" => new Constructor(RefundProcessor::class, ['worldline_payment_gateway.api.client', 'worldline_payment_gateway.amount_of_money_factory', 'worldline_payment_gateway.refund_validator']),
         'worldline_payment_gateway.refund_validator' => new Constructor(RefundValidator::class),
-        "payment_gateway.{$gatewayId}.method_title" => static fn(): string => \__('CAWL Global Online Pay for WooCommerce', 'cawl-for-woocommerce'),
+        "payment_gateway.{$gatewayId}.method_title" => static fn(): string => \__($config['GATEWAY_METHOD_TITLE'], 'cawl-for-woocommerce'),
         "payment_gateway.{$gatewayId}.title" => new Factory(['config.primary_gateway_title'], static function (string $customTitle) : string {
             if (!empty($customTitle)) {
                 return $customTitle;
