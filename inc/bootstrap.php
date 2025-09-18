@@ -44,7 +44,7 @@ return static function (string $mainPluginFile, callable $onError, Module ...$mo
         if ($domain !== 'cawl-for-woocommerce') {
             return $dir;
         }
-        return \WP_PLUGIN_DIR . '/cawl-for-woocommerce/languages/';
+        return \WP_PLUGIN_DIR . '/cawl/languages/';
     }, 10, 3);
     /**
      * Now we expose our custom path safely.

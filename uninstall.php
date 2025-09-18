@@ -14,7 +14,7 @@ use Syde\Vendor\Cawl\Psr\Container\ContainerInterface;
 if (!\defined('WP_UNINSTALL_PLUGIN')) {
     die('Direct access not allowed.');
 }
-$mainPluginFile = __DIR__ . "/cawl-for-woocommerce.php";
+$mainPluginFile = __DIR__ . "/cawl.php";
 if (!\file_exists($mainPluginFile)) {
     return;
 }

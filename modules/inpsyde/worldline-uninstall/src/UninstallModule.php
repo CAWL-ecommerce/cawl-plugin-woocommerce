@@ -30,7 +30,7 @@ class UninstallModule implements ExecutableModule, ServiceModule
             $moduleName = 'uninstall';
             /** @var callable(string,string):string $getModuleAssetUrl */
             $getModuleAssetUrl = $container->get('assets.get_module_asset_url');
-            $assetManager->register((new Script("worldline-{$moduleName}", $getModuleAssetUrl($moduleName, 'backend-main.js'), Asset::BACKEND))->withTranslation('cawl-for-woocommerce', \WP_PLUGIN_DIR . '/cawl-for-woocommerce/languages/'));
+            $assetManager->register((new Script("worldline-{$moduleName}", $getModuleAssetUrl($moduleName, 'backend-main.js'), Asset::BACKEND))->withTranslation('cawl-for-woocommerce', \WP_PLUGIN_DIR . '/cawl/languages/'));
         });
         \add_action('admin_init', static function () use($container) {
             if (self::isValidCleanDbRequest()) {
