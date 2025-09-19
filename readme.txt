@@ -86,7 +86,8 @@ If you encounter issues with the Worldline buttons not appearing after an update
 
 == Changelog ==
 
-= 2.4.2 - 2025-09-18 =
+= 2.4.2 - 2025-09-19 =
+* Fix plugin configuration page
 * Fix translation issue
 * Change plugin title to Offre e-commerce de CAWL
 
