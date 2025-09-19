@@ -4,9 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitedCawl0c8f994
+class ComposerStaticInitedCawle83d282
 {
     public static $files = array (
+        '75224de648373daee048deff719e279d' => __DIR__ . '/..' . '/inpsyde/assets/inc/functions.php',
+        'd57dd50c5392c5a5044aae288d38e1c5' => __DIR__ . '/..' . '/inpsyde/assets/inc/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
     );
 
@@ -1068,9 +1070,9 @@ class ComposerStaticInitedCawl0c8f994
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitedCawl0c8f994::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitedCawl0c8f994::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitedCawl0c8f994::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitedCawle83d282::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitedCawle83d282::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitedCawle83d282::$classMap;
 
         }, null, ClassLoader::class);
     }
