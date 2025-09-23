@@ -12,6 +12,8 @@ class ApplePayRequestModifier extends AbstractHostedPaymentRequestModifier
     public function modify(CreateHostedCheckoutRequest $hostedCheckoutRequest, HostedCheckoutInput $hostedCheckoutInput) : CreateHostedCheckoutRequest
     {
         $mobilePaymentMethodSpecificInput = new MobilePaymentMethodSpecificInput();
+        $authorizationMode = $hostedCheckoutRequest->getMobilePaymentMethodSpecificInput()->getAuthorizationMode();
+        $mobilePaymentMethodSpecificInput->setAuthorizationMode($authorizationMode);
         $mobilePaymentMethodSpecificInput->setPaymentProductId(302);
         $hostedCheckoutRequest->setMobilePaymentMethodSpecificInput($mobilePaymentMethodSpecificInput);
         $this->removeTokensFromRequest($hostedCheckoutRequest);
