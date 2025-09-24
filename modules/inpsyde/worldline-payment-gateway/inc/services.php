@@ -87,7 +87,7 @@ return static function () : array {
             if (!empty($customTitle)) {
                 return $customTitle;
             }
-            return \__('CAWL Global Online Pay', 'cawl-for-woocommerce');
+            return \__('CAWL', 'cawl-for-woocommerce');
         }),
         "payment_gateway.{$gatewayId}.method_description" => static fn(): string => \__('Accept payments with all major and local payment methods.', 'cawl-for-woocommerce'),
         "payment_gateway.{$gatewayId}.description" => new Factory(['config.surcharge_enabled'], static function (bool $surchargeEnabled) : string {

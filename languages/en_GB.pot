@@ -1,5 +1,5 @@
 # Copyright (C) 2025 CAWL
-# This file is distributed under the same license as the CAWL Global Online Pay for WooCommerce plugin.
+# This file is distributed under the same license as the CAWL for WooCommerce plugin.
 msgid ""
 msgstr ""
 "Project-Id-Version: CAWL Payments for WooCommerce {VERSION}\n"
@@ -17,17 +17,12 @@ msgstr ""
 #: cawl.php
 #: modules.local/worldline-payment-gateway/inc/services.php:157
 #: modules/inpsyde/worldline-payment-gateway/inc/services.php:157
-msgid "CAWL Global Online Pay for WooCommerce"
+msgid "CAWL for WooCommerce"
 msgstr ""
 
 #. Description of the plugin
 #: cawl.php
 msgid "CAWL payment gateway for WooCommerce."
-msgstr ""
-
-#. Author of the plugin
-#: cawl.php
-msgid "CAWL"
 msgstr ""
 
 #. Author URI of the plugin
@@ -243,7 +238,7 @@ msgstr ""
 #: modules.local/worldline-payment-gateway/inc/services.php:165
 #: modules/inpsyde/worldline-config/inc/fields.php:129
 #: modules/inpsyde/worldline-payment-gateway/inc/services.php:165
-msgid "CAWL Global Online Pay"
+msgid "CAWL"
 msgstr ""
 
 #: modules.local/config/inc/fields.php:133
@@ -554,7 +549,7 @@ msgstr ""
 
 #: modules.local/config/inc/fields.php:359
 #: modules/inpsyde/worldline-config/inc/fields.php:359
-msgid "Enable CAWL Global Online Pay for WooCommerce"
+msgid "Enable CAWL for WooCommerce"
 msgstr ""
 
 #: modules.local/config/inc/services.php:56

@@ -63,5 +63,5 @@ Additional Note: PSD2 designates the EUR as the base currency for determining ex
         \__('Delete plugin data from the database upon uninstallation. %s', 'cawl-for-woocommerce'),
         \sprintf('<a href="%s">%s</a>', \esc_url($dbCleanerUrl), \__('(Click here to reset the data now)', 'cawl-for-woocommerce'))
     ), 'default' => 'no']];
-    return \array_merge(['enabled' => ['title' => \__('Enable/Disable', 'cawl-for-woocommerce'), 'type' => 'checkbox', 'label' => \__('Enable CAWL Global Online Pay for WooCommerce', 'cawl-for-woocommerce'), 'default' => 'no']], $apiFields, $webhookFields, $otherFields, $checkoutFields, $surchargeFields, $advancedFields);
+    return \array_merge(['enabled' => ['title' => \__('Enable/Disable', 'cawl-for-woocommerce'), 'type' => 'checkbox', 'label' => \__('Enable CAWL for WooCommerce', 'cawl-for-woocommerce'), 'default' => 'no']], $apiFields, $webhookFields, $otherFields, $checkoutFields, $surchargeFields, $advancedFields);
 });

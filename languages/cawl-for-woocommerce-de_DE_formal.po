@@ -20,8 +20,8 @@ msgstr "3DS-Ergebnisse%1$sAngewandte Befreiung: %2$s%1$sHaftung: %3$s"
 
 #: modules.local/config/inc/fields.php:359
 #: modules/inpsyde/worldline-config/inc/fields.php:359
-msgid "Enable CAWL Global Online Pay for WooCommerce"
-msgstr "Aktivieren Sie CAWL Global Online Pay für WooCommerce"
+msgid "Enable CAWL for WooCommerce"
+msgstr "Aktivieren Sie CAWL für WooCommerce"
 
 #. translators: %1$s - newlines
 #: modules.local/config/inc/fields.php:317
@@ -101,15 +101,15 @@ msgstr "Von der 3DS ausgenommene Transaktionen"
 #: modules.local/worldline-payment-gateway/inc/services.php:165
 #: modules/inpsyde/worldline-config/inc/fields.php:129
 #: modules/inpsyde/worldline-payment-gateway/inc/services.php:165
-msgid "CAWL Global Online Pay"
-msgstr "CAWL Global Online Pay"
+msgid "CAWL"
+msgstr "CAWL"
 
 #. Plugin Name of the plugin
 #: cawl.php
 #: modules.local/worldline-payment-gateway/inc/services.php:157
 #: modules/inpsyde/worldline-payment-gateway/inc/services.php:157
-msgid "CAWL Global Online Pay for WooCommerce"
-msgstr "CAWL Global Online Pay für WooCommerce"
+msgid "CAWL for WooCommerce"
+msgstr "CAWL für WooCommerce"
 
 #: modules.local/hosted-tokenization-gateway/src/Payment/HostedTokenizationPaymentProcessor.php:130
 #: modules/inpsyde/worldline-hosted-tokenization-gateway/src/Payment/HostedTokenizationPaymentProcessor.php:130
@@ -804,11 +804,6 @@ msgstr "Wir akzeptieren alle gängigen und lokalen Zahlungsmöglichkeiten. Der E
 #: modules/inpsyde/worldline-payment-gateway/inc/services.php:169
 msgid "Accept payments with all major and local payment methods."
 msgstr "Akzeptieren Sie Zahlungen mit allen gängigen und lokalen Zahlungsmitteln."
-
-#. Author of the plugin
-#: cawl.php
-msgid "CAWL"
-msgstr "CAWL"
 
 #: modules.local/webhooks/src/Helper/WebhookHelper.php:78
 #: modules/inpsyde/worldline-webhooks/src/Helper/WebhookHelper.php:78
