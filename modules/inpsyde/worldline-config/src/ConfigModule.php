@@ -43,6 +43,8 @@ class ConfigModule implements ExecutableModule, ServiceModule
                 $gateway = $container->get('worldline_payment_gateway.gateway');
                 \assert($gateway instanceof PaymentGateway);
                 $gateway->add_error(\__('Connection to the CAWL API failed. Check the credentials.', 'cawl-for-woocommerce'));
+                $old = \get_option($gateway->get_option_key(), $gateway->settings ?? []);
+                return \is_array($old) ? $old : [];
             }
             return $settings;
         });

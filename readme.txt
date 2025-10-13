@@ -86,6 +86,10 @@ If you encounter issues with the Worldline buttons not appearing after an update
 
 == Changelog ==
 
+= 2.4.5 - 2025-10-13 =
+* Add missing 3DS parameters for Credit Card payments
+* Fix storing the wrong API key in the database
+
 = 2.4.4 - 2025-09-24 =
 * Change webhook URL to inpsyde/woocommerce-for-cawl
 * Remove "Global Online Pay" when using CAWL

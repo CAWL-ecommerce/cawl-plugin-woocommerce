@@ -178,5 +178,26 @@ return static function () : array {
             }
             return null;
         },
+        'worldline_payment_gateway.customer_color_depth' => static function () : ?int {
+            $key = 'wlop_color_depth';
+            if (isset($_POST[$key]) && \is_numeric($_POST[$key])) {
+                return (int) $_POST[$key];
+            }
+            return null;
+        },
+        'worldline_payment_gateway.customer_java_enabled' => static function () : ?bool {
+            $key = 'wlop_java_enabled';
+            if (isset($_POST[$key])) {
+                return 'true' === $_POST[$key];
+            }
+            return null;
+        },
+        'worldline_payment_gateway.customer_timezone_offset' => static function () : ?int {
+            $key = 'wlop_timezone_offset';
+            if (isset($_POST[$key]) && \is_numeric($_POST[$key])) {
+                return (int) $_POST[$key];
+            }
+            return null;
+        },
     ];
 };
