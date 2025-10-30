@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitedCawl4f8ca67
+class ComposerStaticInitedCawlc6f299e
 {
     public static $files = array (
         '75224de648373daee048deff719e279d' => __DIR__ . '/..' . '/inpsyde/assets/inc/functions.php',
@@ -514,6 +514,7 @@ class ComposerStaticInitedCawl4f8ca67
         'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\Checkout\\CheckoutModule' => __DIR__ . '/../..' . '/modules/inpsyde/worldline-checkout/src/CheckoutModule.php',
         'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\Checkout\\ReturnPageStatusChecker' => __DIR__ . '/../..' . '/modules/inpsyde/worldline-checkout/src/ReturnPageStatusChecker.php',
         'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\Checkout\\ReturnPageStatusUpdater' => __DIR__ . '/../..' . '/modules/inpsyde/worldline-checkout/src/ReturnPageStatusUpdater.php',
+        'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\Config\\CancellationIntervals' => __DIR__ . '/../..' . '/modules/inpsyde/worldline-config/src/CancellationIntervals.php',
         'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\Config\\CaptureMode' => __DIR__ . '/../..' . '/modules/inpsyde/worldline-config/src/CaptureMode.php',
         'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\Config\\ConfigContainer' => __DIR__ . '/../..' . '/modules/inpsyde/worldline-config/src/ConfigContainer.php',
         'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\Config\\ConfigModule' => __DIR__ . '/../..' . '/modules/inpsyde/worldline-config/src/ConfigModule.php',
@@ -1070,9 +1071,9 @@ class ComposerStaticInitedCawl4f8ca67
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitedCawl4f8ca67::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitedCawl4f8ca67::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitedCawl4f8ca67::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitedCawlc6f299e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitedCawlc6f299e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitedCawlc6f299e::$classMap;
 
         }, null, ClassLoader::class);
     }
