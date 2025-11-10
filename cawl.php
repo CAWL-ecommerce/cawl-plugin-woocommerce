@@ -3,8 +3,8 @@
 /**
  * Plugin Name: CAWL
  * Description: CAWL.
- * Version:     2.4.6
- * SHA:        c6f299e
+ * Version:     2.4.7
+ * SHA:        1370b55
  * Requires at least: 6.3
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
@@ -21,11 +21,13 @@ declare(strict_types=1);
 namespace Inpsyde\WorldlineForWoocommerce;
 
 use Inpsyde\Modularity\Package;
+use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Plugin;
+
+require_once __DIR__ . '/class-plugin.php';
 
 if (is_readable(dirname(__FILE__) . '/vendor/autoload.php')) {
     include_once dirname(__FILE__) . '/vendor/autoload.php';
 }
-
 
 add_action('plugins_loaded', static function (): void {
     static $package;
@@ -45,3 +47,6 @@ add_action('plugins_loaded', static function (): void {
         do_action('wlop.plugin_init');
     }
 }, 5);
+
+global $wpdb;
+Plugin::instance($wpdb, __FILE__);
