@@ -7,9 +7,11 @@ use Exception;
 use Syde\Vendor\Cawl\Inpsyde\Transformer\Transformer;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateHostedCheckoutRequest;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateHostedCheckoutResponse;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\OrderReferences;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentProductFilter;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentProductFiltersHostedCheckout;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RedirectPaymentMethodSpecificInput;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RedirectPaymentProduct5300SpecificInput;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RedirectPaymentProduct5403SpecificInput;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\MerchantClientInterface;
 class HostedCheckoutUrlFactory
@@ -41,8 +43,15 @@ class HostedCheckoutUrlFactory
         $cvcoSpecificInput = new RedirectPaymentProduct5403SpecificInput();
         $cvcoSpecificInput->setCompleteRemainingPaymentAmount(\true);
         $redirectInput->setPaymentProduct5403SpecificInput($cvcoSpecificInput);
+        $pledgSpecificInput = new RedirectPaymentProduct5300SpecificInput();
+        $redirectInput->setPaymentProduct5300SpecificInput($pledgSpecificInput);
         $request->setRedirectPaymentMethodSpecificInput($redirectInput);
         $modifier = $input->hostedCheckoutRequestModifier();
+        $settings = \get_option('woocommerce_cawl-for-woocommerce_settings', []);
+        $descriptorSetting = $settings['fixed_soft_descriptor'] ?: null;
+        $references = $request->getOrder()->getReferences() ?? new OrderReferences();
+        $references->setDescriptor($modifier === null ? $descriptorSetting : null);
+        $request->getOrder()->setReferences($references);
         if (!\is_null($modifier)) {
             $request = $modifier->modify($request, $input);
         }

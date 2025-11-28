@@ -24,7 +24,7 @@ class CarteBancaireThreeDSecureFactory
             return null;
         }
         $carteBancaire3ds = new PaymentProduct130SpecificThreeDSecure();
-        $carteBancaire3ds->setUsecase($this->authorizationMode === AuthorizationMode::SALE ? 'single-amount' : 'payment-upon-shipment');
+        $carteBancaire3ds->setUsecase('single-amount');
         $carteBancaire3ds->setNumberOfItems(\min($numberOfItems, 99));
         if ($this->exemptionType === null) {
             $carteBancaire3ds->setAcquirerExemption(\false);
