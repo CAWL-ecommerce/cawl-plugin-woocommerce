@@ -14,6 +14,12 @@ class PledgRequestModifier extends AbstractHostedPaymentRequestModifier
     public function modify(CreateHostedCheckoutRequest $hostedCheckoutRequest, HostedCheckoutInput $hostedCheckoutInput) : CreateHostedCheckoutRequest
     {
         $redirectPaymentMethodSpecificInput = $hostedCheckoutRequest->getRedirectPaymentMethodSpecificInput();
+        $cardPaymentMethodSpecificInput = $hostedCheckoutRequest->getCardPaymentMethodSpecificInput();
+        $mobilePaymentMethodSpecificInput = $hostedCheckoutRequest->getMobilePaymentMethodSpecificInput();
+        $mobilePaymentMethodSpecificInput->setAuthorizationMode('SALE');
+        $cardPaymentMethodSpecificInput->setAuthorizationMode('SALE');
+        $hostedCheckoutRequest->setCardPaymentMethodSpecificInput($cardPaymentMethodSpecificInput);
+        $hostedCheckoutRequest->setMobilePaymentMethodSpecificInput($mobilePaymentMethodSpecificInput);
         $redirectionData = new RedirectionData();
         $redirectionData->setReturnUrl($hostedCheckoutInput->returnUrl());
         $redirectPaymentMethodSpecificInput->setPaymentProductId(5300);

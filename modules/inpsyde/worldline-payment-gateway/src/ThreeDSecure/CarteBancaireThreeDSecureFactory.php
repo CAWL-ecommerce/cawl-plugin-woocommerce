@@ -3,7 +3,6 @@
 declare (strict_types=1);
 namespace Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\ThreeDSecure;
 
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\Api\AuthorizationMode;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentProduct130SpecificThreeDSecure;
 class CarteBancaireThreeDSecureFactory
 {
@@ -30,7 +29,7 @@ class CarteBancaireThreeDSecureFactory
             $carteBancaire3ds->setAcquirerExemption(\false);
             return $carteBancaire3ds;
         }
-        $carteBancaire3ds->setAcquirerExemption($this->exemptionAmountChecker->isUnderLimit($orderAmount, $currencyCode));
+        $carteBancaire3ds->setAcquirerExemption($this->exemptionType === ExemptionType::TRA && $this->exemptionAmountChecker->isUnderLimit($orderAmount, $currencyCode));
         return $carteBancaire3ds;
     }
 }
