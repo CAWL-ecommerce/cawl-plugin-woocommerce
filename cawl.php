@@ -3,7 +3,7 @@
 /**
  * Plugin Name: CAWL
  * Description: CAWL.
- * Version:     2.4.9
+ * Version:     2.5.1
  * SHA:        4f6cfce
  * Requires at least: 6.3
  * Requires PHP: 7.4
