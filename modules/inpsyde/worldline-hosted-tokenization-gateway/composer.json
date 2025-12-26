@@ -1,5 +1,5 @@
 {
-    "name": "inpsyde\/worldline-hosted-tokenization-gateway",
+    "name": "inpsyde\/cawl-hosted-tokenization-gateway",
     "description": "CAWL module",
     "type": "inpsyde-module",
     "license": "GPL-2.0-or-later",

@@ -15,7 +15,7 @@ addEventListener( 'DOMContentLoaded', () => {
 	let lastSurchargeAmount = 0;
 
 	const tokenRadiosSelector =
-		'.payment_method_worldline-hosted-tokenization input.woocommerce-SavedPaymentMethods-tokenInput';
+		'.payment_method_cawl-hosted-tokenization input.woocommerce-SavedPaymentMethods-tokenInput';
 	const orderSummaryTableSelector =
 		'.shop_table.woocommerce-checkout-review-order-table';
 	let originalOrderSummaryTableHTML = '';

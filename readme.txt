@@ -4,7 +4,7 @@ Tags: woocommerce, Worldline, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.5.1
+Stable tag: 2.5.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,9 +86,14 @@ If you encounter issues with the Worldline buttons not appearing after an update
 
 == Changelog ==
 
+= 2.5.2 - 2025-12-24 =
+* Order Status Handling for Virtual and Downloadable Products
+* Remove the Checkout Type field
+
 = 2.5.1 - 2025-12-09 =
 * Add new payment method: Pledg
 * Manage exemption for FR markets
+* Update hosted checkout logo image
 
 = 2.4.6 - 2025-10-29 =
 * Change surcharge settings title

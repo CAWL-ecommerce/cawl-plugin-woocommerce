@@ -30,7 +30,7 @@ use WC_Payment_Token;
 class HostedTokenizationGatewayModule implements ExecutableModule, ServiceModule, ExtendingModule
 {
     use ModuleClassNameIdTrait;
-    public const PACKAGE_NAME = 'worldline-hosted-tokenization-gateway';
+    public const PACKAGE_NAME = 'cawl-hosted-tokenization-gateway';
     /**
      * @param ContainerInterface $container
      * @return bool
