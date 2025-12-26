@@ -87,6 +87,8 @@ If you encounter issues with the Worldline buttons not appearing after an update
 == Changelog ==
 
 = 2.5.2 - 2025-12-24 =
+* Add configuration to send webhook URL in payloads
+* Add card brand logos
 * Order Status Handling for Virtual and Downloadable Products
 * Remove the Checkout Type field
 
