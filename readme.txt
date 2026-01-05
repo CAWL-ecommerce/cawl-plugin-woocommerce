@@ -86,10 +86,10 @@ If you encounter issues with the Worldline buttons not appearing after an update
 
 == Changelog ==
 
-= 2.5.2 - 2025-12-24 =
-* Add configuration to send webhook URL in payloads
-* Add card brand logos
-* Order Status Handling for Virtual and Downloadable Products
+= 2.5.2 - 2026-01-05 =
+* Added: Possibility to auto-include primary webhooks URL in the payload of payment request, and to configure up to 4 additional endpoints.
+* Added: Possibility to configure which logos will be displayed next to the “Credit cards” checkout option.
+* Added: Orders that contain virtual and downloadable products will immediately go in a Completed status once the payment has been completed.
 * Remove the Checkout Type field
 
 = 2.5.1 - 2025-12-09 =
