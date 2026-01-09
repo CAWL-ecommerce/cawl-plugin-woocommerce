@@ -87,7 +87,7 @@ If you encounter issues with the Worldline buttons not appearing after an update
 == Changelog ==
 
 = 2.5.3 - 2026-01-09 =
-* Improved: Update Apple Pay gateway to be available across all supported browsers
+* Improved: Apple Pay is now supported with all browsers and devices
 * Added: Brand column on orders list page
 * Added: Meta box with additional order details on order details page
 
