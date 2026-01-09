@@ -17,6 +17,7 @@ use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Environment\EnvironmentModu
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\GooglePayGateway\GooglePayGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\HostedTokenizationGateway\HostedTokenizationGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\IdealGateway\IdealGatewayModule;
+use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Orders\OrdersModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\PayPalGateway\PayPalGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\MealvouchersGateway\MealvouchersGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\PledgGateway\PledgGatewayModule;
@@ -35,5 +36,5 @@ use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlineLogging\WorldlineL
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\WorldlinePaymentGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\EpsGateway\EpsGatewayModule;
 return static function () : iterable {
-    return [new EnvironmentModule(), new CoreModule(), new PaymentGatewayModule(), new LoggerModule(), new WorldlineLoggingModule(), new UriModule(), new WcSupportModule(), new ConfigModule(), new WorldlinePaymentGatewayModule(), new HostedTokenizationGatewayModule(), new GooglePayGatewayModule(), new ApplePayGatewayModule(), new BankTransferGatewayModule(), new IdealGatewayModule(), new EpsGatewayModule(), new PayPalGatewayModule(), new PledgGatewayModule(), new PostfinanceGatewayModule(), new KlarnaGatewayModule(), new TwintGatewayModule(), new CheckoutModule(), new ReturnPageModule(), new WebhooksModule(), new VaultingModule(), new UtilsModule(), new DocumentationModule(), new UninstallModule(), new MealvouchersGatewayModule(), new ProductTypeModule(), new CVCOGatewayModule()];
+    return [new EnvironmentModule(), new CoreModule(), new PaymentGatewayModule(), new LoggerModule(), new WorldlineLoggingModule(), new UriModule(), new WcSupportModule(), new ConfigModule(), new WorldlinePaymentGatewayModule(), new HostedTokenizationGatewayModule(), new GooglePayGatewayModule(), new ApplePayGatewayModule(), new BankTransferGatewayModule(), new IdealGatewayModule(), new EpsGatewayModule(), new PayPalGatewayModule(), new PledgGatewayModule(), new PostfinanceGatewayModule(), new KlarnaGatewayModule(), new TwintGatewayModule(), new CheckoutModule(), new ReturnPageModule(), new WebhooksModule(), new VaultingModule(), new UtilsModule(), new DocumentationModule(), new UninstallModule(), new MealvouchersGatewayModule(), new ProductTypeModule(), new CVCOGatewayModule(), new OrdersModule()];
 };

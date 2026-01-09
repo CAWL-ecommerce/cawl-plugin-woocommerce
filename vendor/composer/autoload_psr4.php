@@ -29,6 +29,7 @@ return array(
     'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\PostfinanceGateway\\' => array($baseDir . '/modules/inpsyde/worldline-postfinance-gateway/src'),
     'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\PledgGateway\\' => array($baseDir . '/modules/inpsyde/worldline-pledg-gateway/src'),
     'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\PayPalGateway\\' => array($baseDir . '/modules/inpsyde/worldline-paypal-gateway/src'),
+    'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\Orders\\' => array($baseDir . '/modules/inpsyde/worldline-orders/src'),
     'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\MealvouchersGateway\\' => array($baseDir . '/modules/inpsyde/worldline-mealvouchers-gateway/src'),
     'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\KlarnaGateway\\' => array($baseDir . '/modules/inpsyde/worldline-klarna-gateway/src'),
     'Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\IdealGateway\\' => array($baseDir . '/modules/inpsyde/worldline-ideal-gateway/src'),

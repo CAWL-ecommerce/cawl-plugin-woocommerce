@@ -4,7 +4,7 @@ Tags: woocommerce, Worldline, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.5.2
+Stable tag: 2.5.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,11 @@ If you encounter issues with the Worldline buttons not appearing after an update
 1. tbc by Worldline
 
 == Changelog ==
+
+= 2.5.3 - 2026-01-09 =
+* Improved: Update Apple Pay gateway to be available across all supported browsers
+* Added: Brand column on orders list page
+* Added: Meta box with additional order details on order details page
 
 = 2.5.2 - 2026-01-05 =
 * Added: Possibility to auto-include primary webhooks URL in the payload of payment request, and to configure up to 4 additional endpoints.
