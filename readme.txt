@@ -87,13 +87,12 @@ If you encounter issues with the Worldline buttons not appearing after an update
 == Changelog ==
 
 = 2.5.4 - 2026-01-13 =
-* Fix card brand translations
-* Improved: Add subbrand for mobile payment methods
+* Improved: Add subbrand for Apple Pay and Google Pay payment details
+* Fix: Translation of card brands in the back-end
 
 = 2.5.3 - 2026-01-09 =
+* Added: Additional information about transactions in orders overview and order details.
 * Improved: Apple Pay is now supported with all browsers and devices
-* Added: Brand column on orders list page
-* Added: Meta box with additional order details on order details page
 
 = 2.5.2 - 2026-01-05 =
 * Added: Possibility to auto-include primary webhooks URL in the payload of payment request, and to configure up to 4 additional endpoints.
@@ -104,21 +103,19 @@ If you encounter issues with the Worldline buttons not appearing after an update
 = 2.5.1 - 2025-12-09 =
 * Add new payment method: Pledg
 * Manage exemption for FR markets
-* Update hosted checkout logo image
 
-= 2.4.6 - 2025-10-29 =
+= 2.4.6 - 2025-11-17 =
+* Fix language used for hosted checkout
+
+= 2.4.5 - 2025-10-29 =
 * Change surcharge settings title
 * Add pending order cancellation cron job logic
 * Add upload logo for hosted payment to plugin settings page
 * Change author URI and contributor
 
-= 2.4.5 - 2025-10-13 =
+= 2.4.4 - 2025-10-13 =
 * Add missing 3DS parameters for Credit Card payments
 * Fix storing the wrong API key in the database
-
-= 2.4.4 - 2025-09-24 =
-* Change webhook URL to inpsyde/woocommerce-for-cawl
-* Remove "Global Online Pay" when using CAWL
 
 = 2.4.3 - 2025-09-23 =
 * Fix Apple pay issue
