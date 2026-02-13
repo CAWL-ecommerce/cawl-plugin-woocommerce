@@ -1,18 +1,18 @@
 === CAWL for WooCommerce ===
-Contributors: worldlineisv
-Tags: woocommerce, Worldline, payments, ecommerce
+Contributors: CAWL
+Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.6
+Stable tag: 2.5.7
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Worldline's latest payment processing solution.
+CAWL's latest payment processing solution.
 
 == Description ==
 
-CAWL for WooCommerce allows store owners to securely accept and process payments through Worldline’s payment solutions. Our plug-in comes with regular updates and full integration support, guaranteeing a versatile out-of-the-box solution to accept online payments easily. The plugin ensures secure transactions by utilizing advanced encryption and security protocols, providing both store owners and customers peace of mind when it comes to payment security.
+CAWL for WooCommerce allows store owners to securely accept and process payments through CAWL’s payment solutions. Our plug-in comes with regular updates and full integration support, guaranteeing a versatile out-of-the-box solution to accept online payments easily. The plugin ensures secure transactions by utilizing advanced encryption and security protocols, providing both store owners and customers peace of mind when it comes to payment security.
 
 **Features**
 
@@ -32,12 +32,11 @@ Our plugin is crafted to integrate seamlessly into your WooCommerce store withou
 
 = Where can I find documentation for the plugin setup? =
 
-For help setting up and configuring the plugin, please refer to the [documentation](https://docs.direct.worldline-solutions.com/en/integration/how-to-integrate/plugins/woocommerce).
+For help setting up and configuring the plugin, please refer to the [documentation](https://docs.ecommerce.cawl-solutions.fr/en/integration/how-to-integrate/plugins/woocommerce).
 
 = Where can I get help for CAWL for WooCommerce? =
 
-For questions regarding the plugin setup, we recommend reviewing our [documentation](https://docs.direct.worldline-solutions.com/en/integration/how-to-integrate/plugins/woocommerce) if you encounter any issues.
-If the question or problem persists after reviewing the documentation, kindly create a new thread in the [support forums](https://wordpress.org/support/plugin/worldline-for-woocommerce/) or email to us at [isvpartners@worldline.com](mailto:isvpartners@worldline.com).
+For questions regarding the plugin setup, we recommend reviewing our [documentation](https://docs.ecommerce.cawl-solutions.fr/en/integration/how-to-integrate/plugins/woocommerce) if you encounter any issues.
 
 == Installation ==
 
@@ -48,7 +47,7 @@ To install and configure CAWL for WooCommerce, you will need:
 * WordPress Version 6.3 or newer (installed)
 * WooCommerce Version 8.6 or newer (installed and activated)
 * PHP Version 7.4 or newer
-* Worldline account
+* CAWL account
 
 = Installation instructions =
 
@@ -60,31 +59,30 @@ To install and configure CAWL for WooCommerce, you will need:
 
 = Setup and Configuration =
 
-Follow the steps below to connect the plugin to your Worldline account:
+Follow the steps below to connect the plugin to your CAWL account:
 
 1. After you have activated the CAWL for WooCommerce plugin, go to **WooCommerce  > Settings**.
 2. Click the **Payments** tab.
-3. Click on **CAWL for WooCommerce**.
-4. Enter the details for PSPID, API Key and Secret (live/test depending on the environment) from your Worldline Merchant Portal (Developer>Payment API).
+3. Click on **CAWL Pay for WooCommerce**.
+4. Enter the details for PSPID, API Key and Secret (live/test depending on the environment) from your CAWL Merchant Portal (Developer>Payment API).
 5. Click on "Save" to store these settings in the plugin.
 6. Copy the "Webhook endpoint".
-6. Add the webhook endpoint in the Worldline back office page "Developer" > "Webhooks" by clicking "add webhook endpoint".
+6. Add the webhook endpoint in the CAWL back office page "Developer" > "Webhooks" by clicking "add webhook endpoint".
 7. Generate the webhook keys on the back office page and copy the details into the plugin settings page into the fields "Webhook ID" and "Secret Webhook key".
 8. Click on "Save" to store these settings in the plugin.
 
-Complete onboarding instructions can be found in the [documentation here](https://docs.direct.worldline-solutions.com/en/integration/how-to-integrate/plugins/woocommerce).
+Complete onboarding instructions can be found in the [documentation here](https://docs.ecommerce.cawl-solutions.fr/en/integration/how-to-integrate/plugins/woocommerce).
 
 = Updating =
 
 Automatic updates should work generally smoothly, but we still recommend you back up your site.
 
-If you encounter issues with the Worldline buttons not appearing after an update, purge your website cache.
-
-== Screenshots ==
-
-1. tbc by Worldline
+If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.7 - 2026-02-10 =
+* Added: Support of payment method “SEPA Direct Debit”
 
 = 2.5.6 - 2026-02-04 =
 * Fix: Stability for 3DS exemption capabilities
