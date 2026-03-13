@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2026-02-13 08:41+0000",
+    "translation-revision-date": "2026-02-24 15:40+0000",
     "generator": "WP-CLI\/2.12.0",
     "source": "assets\/config-backend-main.js",
     "domain": "messages",
@@ -7,7 +7,7 @@
         "messages": {
             "": {
                 "domain": "messages",
-                "lang": "es_ES",
+                "lang": "es-ES",
                 "plural-forms": "nplurals=2; plural=n != 1;"
             },
             "Automatic: The URL(s) below will be used for transactions from this store, any webhook URL(s) configured in the merchant portal will be ignored.<br>Manual: You are fully responsible for adding your store webhook URL in the merchant portal. Failure to do so could result in missing or incomplete orders!": [

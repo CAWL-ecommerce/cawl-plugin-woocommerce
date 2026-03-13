@@ -71,6 +71,22 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.12 - 2026-03-03**
+* Improved: Offer the possibility to only accept instant bank transfer on CAWL Gateway.
+
+**2.5.11 - 2026-03-02**
+* Fixed: Allow merchant to activate High performance order storage
+
+**2.5.10 - 2026-02-27**
+* Added: Deleting a consumer’s stored token from their account now also deletes the token on the payment platform
+
+**2.5.9 - 2026-02-24**
+* Updated: Branding of Pledg changed to Sofinco
+* Updated: Branding of iDeal changed to iDEAL | Wero
+
+**2.5.8 - 2026-02-24**
+* Improved: Offer the possibility to only accept instant bank transfer.
+
 **2.5.7 - 2026-02-10**
 * Added: New payment method - SEPA Direct Debit
 

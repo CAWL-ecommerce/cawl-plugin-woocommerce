@@ -2,19 +2,19 @@
 # This file is distributed under the same license as the CAWL for WooCommerce package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-02-13 08:46+0000\n"
+"PO-Revision-Date: 2026-02-24 15:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Loco https://localise.biz/\n"
-"Language: it_IT\n"
+"Language: it-IT\n"
 "Project-Id-Version: CAWL for WooCommerce\n"
 "Language-Team: Italian\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-22 09:59+0000\n"
 "Last-Translator: \n"
-"X-Loco-Version: 2.8.0; wp-6.9.1; php-8.3.13"
+"X-Loco-Version: 2.8.1; wp-6.9.1; php-8.3.13"
 
 #. translators: %s transaction ID
 #: modules.local/webhooks/src/Handler/PaymentRefundedHandler.php:177
@@ -78,6 +78,11 @@ msgstr "Autenticazione 3-D Secure"
 msgid "3DS results%1$sApplied exemption: %2$s%1$sLiability: %3$s"
 msgstr "Risultati 3DS%1$sEsenzione applicata: %2$s%1$sResponsabilità: %3$s"
 
+#: modules.local/bank-transfer-gateway/inc/fields.php:21
+#: modules/worldline-bank-transfer-gateway/inc/fields.php:9
+msgid "Accept instant payment only for Bank Transfers"
+msgstr "Accettare solo pagamenti istantanei per bonifici bancari"
+
 #: modules.local/worldline-payment-gateway/inc/services.php:169
 #: modules/inpsyde/worldline-payment-gateway/inc/services.php:169
 msgid "Accept payments with all major and local payment methods."
@@ -105,8 +110,8 @@ msgstr "Accetta pagamenti con Google Pay."
 
 #: modules.local/ideal-gateway/inc/services.php:37
 #: modules/inpsyde/worldline-ideal-gateway/inc/services.php:37
-msgid "Accept payments with iDEAL."
-msgstr "Accetta pagamenti con iDEAL."
+msgid "Accept payments with iDEAL | Wero."
+msgstr "Accetta pagamenti con iDEAL | Wero."
 
 #: modules.local/klarna-gateway/inc/services.php:209
 #: modules/inpsyde/worldline-klarna-gateway/inc/services.php:209
@@ -325,8 +330,9 @@ msgstr "Bonifico bancario"
 
 #: modules.local/bank-transfer-gateway/inc/services.php:35
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/services.php:35
-msgid "Bank transfer (CAWL)"
-msgstr "Bonifico bancario (CAWL)"
+#| msgid "Bank transfer by CAWL"
+msgid "Bank Transfer by CAWL"
+msgstr "Bonifico Bancario di CAWL"
 
 #. translators: %1$s - newlines
 #: modules.local/config/inc/fields.php:270
@@ -351,6 +357,15 @@ msgstr ""
 "rifiuto soft. In tali casi, proveremo a richiedere al cliente "
 "l'autenticazione SCA e a riavviare la transazione se il cliente si autentica "
 "correttamente."
+
+#: modules.local/bank-transfer-gateway/inc/fields.php:26
+#: modules/worldline-bank-transfer-gateway/inc/fields.php:9
+msgid ""
+"By enabling this option, you will only accept bank transfers from your "
+"customers where the payment is done instantly."
+msgstr ""
+"Attivando questa opzione, accetterai solo bonifici bancari dai tuoi clienti "
+"in cui il pagamento è stato effettuato istantaneamente."
 
 #: modules.local/worldline-payment-gateway/src/Admin/RenderCaptureAction.php:28
 #: modules/inpsyde/worldline-payment-gateway/src/Admin/RenderCaptureAction.php:28
@@ -435,10 +450,12 @@ msgstr "Icone personalizzate per carte di credito"
 
 #: modules.local/config/inc/fields.php:414
 #: modules/inpsyde/worldline-config/inc/fields.php:414
-msgid "Define how you want the SEPA mandate to be signed. SMS will send a message "
+msgid ""
+"Define how you want the SEPA mandate to be signed. SMS will send a message "
 "to the phone number your customer has provided, and UNSIGNED will proceed "
 "with the payment without signature."
-msgstr "Definisci come si desidera che sia firmato il mandato SEPA. L'SMS invierà un "
+msgstr ""
+"Definisci come si desidera che sia firmato il mandato SEPA. L'SMS invierà un "
 "messaggio al numero di telefono fornito dal cliente e UNSIGNED procederà con "
 "il pagamento senza firma."
 
@@ -505,8 +522,9 @@ msgstr "Abilita Apple Pay (CAWL)"
 
 #: modules.local/bank-transfer-gateway/inc/fields.php:17
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/fields.php:17
-msgid "Enable Bank transfer (CAWL)"
-msgstr "Abilita bonifico bancario (CAWL)"
+#| msgid "Enable Bank transfer by CAWL"
+msgid "Enable Bank Transfer by CAWL"
+msgstr "Abilita Bonifico Bancario di CAWL"
 
 #: modules.local/config/inc/fields.php:148
 #: modules/inpsyde/worldline-config/inc/fields.php:148
@@ -535,8 +553,8 @@ msgstr "Abilita Google Pay (CAWL)"
 
 #: modules.local/ideal-gateway/inc/fields.php:17
 #: modules/inpsyde/worldline-ideal-gateway/inc/fields.php:17
-msgid "Enable iDEAL (CAWL)"
-msgstr "Abilita iDEAL (CAWL)"
+msgid "Enable iDEAL | Wero (CAWL)"
+msgstr "Abilita iDEAL | Wero (CAWL)"
 
 #: modules.local/postfinance/src/Postfinance.php:170
 #: modules/inpsyde/worldline-postfinance-gateway/src/Postfinance.php:170
@@ -778,13 +796,13 @@ msgstr "https://worldline.com"
 
 #: modules.local/ideal-gateway/inc/services.php:35
 #: modules/inpsyde/worldline-ideal-gateway/inc/services.php:35
-msgid "iDEAL"
-msgstr "ideale"
+msgid "iDEAL | Wero"
+msgstr "iDEAL | Wero"
 
 #: modules.local/ideal-gateway/inc/services.php:33
 #: modules/inpsyde/worldline-ideal-gateway/inc/services.php:33
-msgid "iDEAL (CAWL)"
-msgstr "iDEAL (linea mondiale)"
+msgid "iDEAL | Wero (CAWL)"
+msgstr "iDEAL | Wero (linea mondiale)"
 
 #: modules.local/config/inc/fields.php:283
 #: modules/inpsyde/worldline-config/inc/fields.php:37
@@ -1018,14 +1036,14 @@ msgid ""
 "Minimum 2, maximum 15 characters. You can specify a fixed value that will be "
 "sent to the banks handling the payment. If the consumer's bank is supporting "
 "that, this value can be displayed on the consumer's bank slip. Important "
-"note : setting a value here is mandatory in order to use Pledg payment "
+"note : setting a value here is mandatory in order to use Sofinco payment "
 "method."
 msgstr ""
 "Minimo 2, massimo 15 caratteri. È possibile specificare un valore fisso che "
 "sarà inviato alle banche che gestiscono il pagamento. Se la banca del "
 "consumatore supporta questa funzione, questo valore può essere visualizzato "
 "sull’estratto conto bancario del consumatore. Nota importante: impostare un "
-"valore qui è obbligatorio per utilizzare il metodo di pagamento Pledg."
+"valore qui è obbligatorio per utilizzare il metodo di pagamento Sofinco."
 
 #: modules.local/webhooks/inc/fields.php:102
 #: modules/inpsyde/worldline-webhooks/inc/fields.php:16
