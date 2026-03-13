@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2026-02-24 15:40+0000",
+    "translation-revision-date": "2026-02-23 13:34+0000",
     "generator": "WP-CLI\/2.12.0",
     "source": "assets\/uninstall-backend-main.js",
     "domain": "messages",
@@ -7,7 +7,7 @@
         "messages": {
             "": {
                 "domain": "messages",
-                "lang": "it-IT",
+                "lang": "it_IT",
                 "plural-forms": "nplurals=2; plural=n != 1;"
             },
             "Are you sure you want to clear all CAWL plugin data from the database? This action cannot be undone.": [
