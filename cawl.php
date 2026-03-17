@@ -3,8 +3,8 @@
 /**
  * Plugin Name: CAWL
  * Description: CAWL.
- * Version:     2.5.8
- * SHA:        76cd301
+ * Version:     2.5.9
+ * SHA:        4c5f435
  * Requires at least: 6.3
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
