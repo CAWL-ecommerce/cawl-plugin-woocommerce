@@ -71,6 +71,9 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.12 - 2026-03-03**
+* Improved: Offer the possibility to only accept instant bank transfer on CAWL Gateway.
+
 **2.5.11 - 2026-03-02**
 * Fixed: Allow merchant to activate High performance order storage
 

@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.11
+Stable tag: 2.5.12
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,9 @@ Automatic updates should work generally smoothly, but we still recommend you bac
 If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.12 - 2026-03-03 =
+* Improved: Offer the possibility to only accept instant bank transfer on CAWL Gateway.
 
 = 2.5.11 - 2026-03-02 =
 * Fixed: Allow merchant to activate High performance order storage
