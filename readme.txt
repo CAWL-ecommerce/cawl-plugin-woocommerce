@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.9
+Stable tag: 2.5.10
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,13 @@ Automatic updates should work generally smoothly, but we still recommend you bac
 If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.10 - 2026-02-27 =
+* Added: Deleting a consumer’s stored token from their account now also deletes the token on the payment platform
+
+= 2.5.9 - 2026-02-24 =
+* Updated: Branding of Pledg changed to Sofinco
+* Updated: Branding of iDeal changed to iDEAL | Wero
 
 = 2.5.8 - 2026-02-24 =
 * Improved: Offer the possibility to only accept instant bank transfer.
