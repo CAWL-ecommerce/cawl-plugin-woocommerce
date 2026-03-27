@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.12
+Stable tag: 2.5.13
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,11 @@ Automatic updates should work generally smoothly, but we still recommend you bac
 If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.13 - 2026-03-09 =
+* Added: Support of payment method “Blik”
+* Added: Support of payment method “Przelewy24”
+* Added: Support of payment method “Linxo Connect”
 
 = 2.5.12 - 2026-03-03 =
 * Improved: Offer the possibility to only accept instant bank transfer on CAWL Gateway.

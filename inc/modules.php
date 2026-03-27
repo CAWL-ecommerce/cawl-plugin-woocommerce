@@ -8,6 +8,7 @@ use Syde\Vendor\Cawl\Inpsyde\Modularity\Module\Module;
 use Syde\Vendor\Cawl\Inpsyde\PaymentGateway\PaymentGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\ApplePayGateway\ApplePayGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\BankTransferGateway\BankTransferGatewayModule;
+use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\BlikGateway\BlikGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Checkout\CheckoutModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Config\ConfigModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core\CoreModule;
@@ -17,6 +18,7 @@ use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Environment\EnvironmentModu
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\GooglePayGateway\GooglePayGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\HostedTokenizationGateway\HostedTokenizationGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\IdealGateway\IdealGatewayModule;
+use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\LinxoConnectGateway\LinxoConnectGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Orders\OrdersModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\PayPalGateway\PayPalGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\MealvouchersGateway\MealvouchersGatewayModule;
@@ -24,6 +26,7 @@ use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\PledgGateway\PledgGatewayMo
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\PostfinanceGateway\PostfinanceGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\KlarnaGateway\KlarnaGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\ProductType\ProductTypeModule;
+use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Przelewy24Gateway\Przelewy24GatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\ReturnPage\ReturnPageModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\SepaDirectDebitGateway\SepaDirectDebitGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\TwintGateway\TwintGatewayModule;
@@ -37,5 +40,5 @@ use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlineLogging\WorldlineL
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\WorldlinePaymentGatewayModule;
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\EpsGateway\EpsGatewayModule;
 return static function () : iterable {
-    return [new EnvironmentModule(), new CoreModule(), new PaymentGatewayModule(), new LoggerModule(), new WorldlineLoggingModule(), new UriModule(), new WcSupportModule(), new ConfigModule(), new WorldlinePaymentGatewayModule(), new HostedTokenizationGatewayModule(), new GooglePayGatewayModule(), new ApplePayGatewayModule(), new BankTransferGatewayModule(), new IdealGatewayModule(), new EpsGatewayModule(), new PayPalGatewayModule(), new PledgGatewayModule(), new PostfinanceGatewayModule(), new SepaDirectDebitGatewayModule(), new KlarnaGatewayModule(), new TwintGatewayModule(), new CheckoutModule(), new ReturnPageModule(), new WebhooksModule(), new VaultingModule(), new UtilsModule(), new DocumentationModule(), new UninstallModule(), new MealvouchersGatewayModule(), new ProductTypeModule(), new CVCOGatewayModule(), new OrdersModule()];
+    return [new EnvironmentModule(), new CoreModule(), new PaymentGatewayModule(), new LoggerModule(), new WorldlineLoggingModule(), new UriModule(), new WcSupportModule(), new ConfigModule(), new WorldlinePaymentGatewayModule(), new HostedTokenizationGatewayModule(), new GooglePayGatewayModule(), new ApplePayGatewayModule(), new BankTransferGatewayModule(), new IdealGatewayModule(), new EpsGatewayModule(), new PayPalGatewayModule(), new BlikGatewayModule(), new PledgGatewayModule(), new LinxoConnectGatewayModule(), new Przelewy24GatewayModule(), new PostfinanceGatewayModule(), new SepaDirectDebitGatewayModule(), new KlarnaGatewayModule(), new TwintGatewayModule(), new CheckoutModule(), new ReturnPageModule(), new WebhooksModule(), new VaultingModule(), new UtilsModule(), new DocumentationModule(), new UninstallModule(), new MealvouchersGatewayModule(), new ProductTypeModule(), new CVCOGatewayModule(), new OrdersModule()];
 };
