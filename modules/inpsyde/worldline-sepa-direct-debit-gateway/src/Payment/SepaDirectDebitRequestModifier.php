@@ -7,8 +7,6 @@ use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\Api
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\Payment\AbstractHostedPaymentRequestModifier;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateHostedCheckoutRequest;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateMandateRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\SepaDirectDebitPaymentMethodSpecificInput;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\SepaDirectDebitPaymentProduct771SpecificInput;
 final class SepaDirectDebitRequestModifier extends AbstractHostedPaymentRequestModifier
 {
     private const PRODUCT_ID = 771;

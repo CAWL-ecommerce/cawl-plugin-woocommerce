@@ -9,6 +9,7 @@ use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiResource;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ErrorResponseException;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CapturesResponse;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
 /**
  * Captures client.
@@ -16,11 +17,11 @@ use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
 class CapturesClient extends ApiResource implements CapturesClientInterface
 {
     /** @var ExceptionFactory|null */
-    private $responseExceptionFactory = null;
+    private ?ExceptionFactory $responseExceptionFactory = null;
     /**
      * @inheritdoc
      */
-    public function getCaptures($paymentId, CallContext $callContext = null)
+    public function getCaptures(string $paymentId, ?CallContext $callContext = null) : CapturesResponse
     {
         $this->context['paymentId'] = $paymentId;
         $responseClassMap = new ResponseClassMap();
@@ -33,7 +34,7 @@ class CapturesClient extends ApiResource implements CapturesClientInterface
         }
     }
     /** @return ExceptionFactory */
-    private function getResponseExceptionFactory()
+    private function getResponseExceptionFactory() : ExceptionFactory
     {
         if (\is_null($this->responseExceptionFactory)) {
             $this->responseExceptionFactory = new ExceptionFactory();

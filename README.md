@@ -71,6 +71,16 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.15 - 2026-03-30**
+* Added: Support of Illicado payment method
+* Added: Support of Wero payment method
+* Fixed: Cancel webhook cancelling orders with a different transaction ID
+* Fixed: Remove handling of canceled payment from the refund flow
+
+**2.5.14 - 2026-03-17**
+* Added: Possibility to cancel partially or fully authorized transactions
+* Added: Possibility to capture partially authorized transactions
+
 **2.5.13 - 2026-03-09**
 * Added: Support of payment method “Blik”
 * Added: Support of payment method “Przelewy24”

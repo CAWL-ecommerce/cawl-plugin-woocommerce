@@ -14,10 +14,11 @@ use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentProductFilter;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentProductFiltersHostedCheckout;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RedirectPaymentMethodSpecificInput;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RedirectPaymentProduct5300SpecificInput;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RedirectPaymentProduct3112SpecificInput;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RedirectPaymentProduct5403SpecificInput;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RedirectPaymentProduct5408SpecificInput;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\SepaDirectDebitPaymentMethodSpecificInput;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\SepaDirectDebitPaymentProduct771SpecificInput;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\SepaDirectDebitPaymentMethodSpecificInputBase;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\SepaDirectDebitPaymentProduct771SpecificInputBase;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\MerchantClientInterface;
 use Syde\Vendor\Cawl\Psr\Http\Message\UriInterface;
 class HostedCheckoutUrlFactory
@@ -63,16 +64,19 @@ class HostedCheckoutUrlFactory
         }
         $sepaInput = $request->getSepaDirectDebitPaymentMethodSpecificInput();
         if (!$sepaInput) {
-            $sepaInput = new SepaDirectDebitPaymentMethodSpecificInput();
+            $sepaInput = new SepaDirectDebitPaymentMethodSpecificInputBase();
         }
         $cvcoSpecificInput = new RedirectPaymentProduct5403SpecificInput();
         $cvcoSpecificInput->setCompleteRemainingPaymentAmount(\true);
         $redirectInput->setPaymentProduct5403SpecificInput($cvcoSpecificInput);
+        $illicadoSpecificInput = new RedirectPaymentProduct3112SpecificInput();
+        $illicadoSpecificInput->setCompleteRemainingPaymentAmount(\true);
+        $redirectInput->setPaymentProduct3112SpecificInput($illicadoSpecificInput);
         $pledgSpecificInput = new RedirectPaymentProduct5300SpecificInput();
         $redirectInput->setPaymentProduct5300SpecificInput($pledgSpecificInput);
         $sepaSpecificInput = $sepaInput->getPaymentProduct771SpecificInput();
         if (!$sepaSpecificInput) {
-            $sepaSpecificInput = new SepaDirectDebitPaymentProduct771SpecificInput();
+            $sepaSpecificInput = new SepaDirectDebitPaymentProduct771SpecificInputBase();
         }
         $bankTransferSpecificInput = new RedirectPaymentProduct5408SpecificInput();
         $redirectInput->setPaymentProduct5408SpecificInput($bankTransferSpecificInput);

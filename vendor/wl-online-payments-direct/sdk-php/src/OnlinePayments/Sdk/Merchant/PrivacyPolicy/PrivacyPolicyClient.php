@@ -9,6 +9,7 @@ use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiResource;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ErrorResponseException;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\GetPrivacyPolicyResponse;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
 /**
  * PrivacyPolicy client.
@@ -16,11 +17,11 @@ use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
 class PrivacyPolicyClient extends ApiResource implements PrivacyPolicyClientInterface
 {
     /** @var ExceptionFactory|null */
-    private $responseExceptionFactory = null;
+    private ?ExceptionFactory $responseExceptionFactory = null;
     /**
      * @inheritdoc
      */
-    public function getPrivacyPolicy(GetPrivacyPolicyParams $query, CallContext $callContext = null)
+    public function getPrivacyPolicy(GetPrivacyPolicyParams $query, ?CallContext $callContext = null) : GetPrivacyPolicyResponse
     {
         $responseClassMap = new ResponseClassMap();
         $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\GetPrivacyPolicyResponse';
@@ -32,7 +33,7 @@ class PrivacyPolicyClient extends ApiResource implements PrivacyPolicyClientInte
         }
     }
     /** @return ExceptionFactory */
-    private function getResponseExceptionFactory()
+    private function getResponseExceptionFactory() : ExceptionFactory
     {
         if (\is_null($this->responseExceptionFactory)) {
             $this->responseExceptionFactory = new ExceptionFactory();

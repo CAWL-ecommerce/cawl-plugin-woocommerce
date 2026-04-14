@@ -25,12 +25,14 @@ interface GatewayIds
     public const KLARNA_FINANCING_PAY_IN_3 = 'cawl-klarna-financing-pay-in-3';
     public const MEALVOUCHERS = 'cawl-mealvouchers';
     public const CVCO = 'cawl-cvco';
+    public const ILLICADO = 'cawl-illicado';
     public const EPS = 'cawl-eps';
     public const PLEDG = 'cawl-pledg';
     public const PRZELEWY24 = 'cawl-przelewy24';
     public const LINXO_CONNECT = 'cawl-linxo-connect';
     public const BLIK = 'cawl-blik';
     public const SEPA_DIRECT_DEBIT = 'cawl-sepa-direct-debit';
-    public const HOSTED_CHECKOUT_GATEWAYS = [self::HOSTED_CHECKOUT, self::GOOGLE_PAY, self::APPLE_PAY, self::BANK_TRANSFER, self::IDEAL, self::PAYPAL, self::POSTFINANCE, self::MEALVOUCHERS, self::CVCO, self::EPS, self::PLEDG, self::PRZELEWY24, self::BLIK, self::LINXO_CONNECT, self::SEPA_DIRECT_DEBIT];
-    public const ALL = [self::HOSTED_CHECKOUT, self::HOSTED_TOKENIZATION, self::GOOGLE_PAY, self::APPLE_PAY, self::BANK_TRANSFER, self::IDEAL, self::PAYPAL, self::KLARNA_PAY_WITH_KLARNA, self::KLARNA_PAY_NOW, self::KLARNA_BANK_TRANSFER, self::KLARNA_DIRECT_DEBIT, self::KLARNA_PAY_LATER, self::KLARNA_PAY_LATER_PAY_IN_3, self::KLARNA_PAY_LATER_BANK_TRANSFER, self::KLARNA_FINANCING, self::KLARNA_FINANCING_PAY_IN_3, self::POSTFINANCE, self::TWINT, self::MEALVOUCHERS, self::CVCO, self::EPS, self::PLEDG, self::PRZELEWY24, self::BLIK, self::LINXO_CONNECT, self::SEPA_DIRECT_DEBIT];
+    public const WERO = 'cawl-wero';
+    public const HOSTED_CHECKOUT_GATEWAYS = [self::HOSTED_CHECKOUT, self::GOOGLE_PAY, self::APPLE_PAY, self::BANK_TRANSFER, self::IDEAL, self::PAYPAL, self::POSTFINANCE, self::MEALVOUCHERS, self::CVCO, self::EPS, self::PLEDG, self::PRZELEWY24, self::BLIK, self::LINXO_CONNECT, self::SEPA_DIRECT_DEBIT, self::ILLICADO, self::WERO];
+    public const ALL = [self::HOSTED_CHECKOUT, self::HOSTED_TOKENIZATION, self::GOOGLE_PAY, self::APPLE_PAY, self::BANK_TRANSFER, self::IDEAL, self::PAYPAL, self::KLARNA_PAY_WITH_KLARNA, self::KLARNA_PAY_NOW, self::KLARNA_BANK_TRANSFER, self::KLARNA_DIRECT_DEBIT, self::KLARNA_PAY_LATER, self::KLARNA_PAY_LATER_PAY_IN_3, self::KLARNA_PAY_LATER_BANK_TRANSFER, self::KLARNA_FINANCING, self::KLARNA_FINANCING_PAY_IN_3, self::POSTFINANCE, self::TWINT, self::MEALVOUCHERS, self::CVCO, self::EPS, self::PLEDG, self::PRZELEWY24, self::BLIK, self::LINXO_CONNECT, self::SEPA_DIRECT_DEBIT, self::ILLICADO, self::WERO];
 }

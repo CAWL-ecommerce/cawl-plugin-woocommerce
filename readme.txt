@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.13
+Stable tag: 2.5.15
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,16 @@ Automatic updates should work generally smoothly, but we still recommend you bac
 If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.15 - 2026-03-30 =
+* Added: Support of Illicado payment method
+* Added: Support of Wero payment method
+* Fixed: Cancel webhook cancelling orders with a different transaction ID
+* Fixed: Remove handling of canceled payment from the refund flow
+
+= 2.5.14 - 2026-03-17 =
+* Added: Possibility to cancel partially or fully authorized transactions
+* Added: Possibility to capture partially authorized transactions
 
 = 2.5.13 - 2026-03-09 =
 * Added: Support of payment method “Blik”

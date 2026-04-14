@@ -10,6 +10,8 @@ use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ErrorResponseException;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateTokenRequest;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreatedTokenResponse;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\TokenResponse;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
 /**
  * Tokens client.
@@ -17,11 +19,25 @@ use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
 class TokensClient extends ApiResource implements TokensClientInterface
 {
     /** @var ExceptionFactory|null */
-    private $responseExceptionFactory = null;
+    private ?ExceptionFactory $responseExceptionFactory = null;
     /**
      * @inheritdoc
      */
-    public function getToken($tokenId, CallContext $callContext = null)
+    public function createToken(CreateTokenRequest $body, ?CallContext $callContext = null) : CreatedTokenResponse
+    {
+        $responseClassMap = new ResponseClassMap();
+        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\CreatedTokenResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        try {
+            return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/tokens'), $this->getClientMetaInfo(), $body, null, $callContext);
+        } catch (ErrorResponseException $e) {
+            throw $this->getResponseExceptionFactory()->createException($e->getHttpStatusCode(), $e->getErrorResponse(), $callContext);
+        }
+    }
+    /**
+     * @inheritdoc
+     */
+    public function getToken(string $tokenId, ?CallContext $callContext = null) : TokenResponse
     {
         $this->context['tokenId'] = $tokenId;
         $responseClassMap = new ResponseClassMap();
@@ -36,33 +52,19 @@ class TokensClient extends ApiResource implements TokensClientInterface
     /**
      * @inheritdoc
      */
-    public function deleteToken($tokenId, CallContext $callContext = null)
+    public function deleteToken(string $tokenId, ?CallContext $callContext = null) : void
     {
         $this->context['tokenId'] = $tokenId;
         $responseClassMap = new ResponseClassMap();
         $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
-            return $this->getCommunicator()->delete($responseClassMap, $this->instantiateUri('/v2/{merchantId}/tokens/{tokenId}'), $this->getClientMetaInfo(), null, $callContext);
-        } catch (ErrorResponseException $e) {
-            throw $this->getResponseExceptionFactory()->createException($e->getHttpStatusCode(), $e->getErrorResponse(), $callContext);
-        }
-    }
-    /**
-     * @inheritdoc
-     */
-    public function createToken(CreateTokenRequest $body, CallContext $callContext = null)
-    {
-        $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\CreatedTokenResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
-        try {
-            return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/tokens'), $this->getClientMetaInfo(), $body, null, $callContext);
+            $this->getCommunicator()->delete($responseClassMap, $this->instantiateUri('/v2/{merchantId}/tokens/{tokenId}'), $this->getClientMetaInfo(), null, $callContext);
         } catch (ErrorResponseException $e) {
             throw $this->getResponseExceptionFactory()->createException($e->getHttpStatusCode(), $e->getErrorResponse(), $callContext);
         }
     }
     /** @return ExceptionFactory */
-    private function getResponseExceptionFactory()
+    private function getResponseExceptionFactory() : ExceptionFactory
     {
         if (\is_null($this->responseExceptionFactory)) {
             $this->responseExceptionFactory = new ExceptionFactory();
