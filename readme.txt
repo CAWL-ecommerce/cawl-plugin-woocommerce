@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.15
+Stable tag: 2.5.18
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,17 @@ Automatic updates should work generally smoothly, but we still recommend you bac
 If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.18 - 2026-04-27 =
+* Added: Configuration option to skip the CAWL payment confirmation page
+* Fixed: PostFinance, TWINT and Bank Transfer translation labels
+* Fixed: Compatibility with new SDK version
+
+= 2.5.17 - 2026-04-08 =
+* Fixed: Add exception handling for when the API is unavailable
+
+= 2.5.16 - 2026-04-07 =
+* Fixed: Renaming actions to prevent the WlopHtConfig object from being overwritten
 
 = 2.5.15 - 2026-03-30 =
 * Added: Support of Illicado payment method

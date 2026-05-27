@@ -375,8 +375,8 @@ msgstr "Banküberweisung"
 #: modules.local/bank-transfer-gateway/inc/services.php:35
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/services.php:35
 #| msgid "Bank transfer by CAWL"
-msgid "Bank Transfer by CAWL"
-msgstr "Banküberweisung von CAWL"
+msgid "Bank Transfer by Worldline"
+msgstr "Banküberweisung von Worldline"
 
 #. translators: %1$s - newlines
 #: modules.local/config/inc/fields.php:270
@@ -588,8 +588,8 @@ msgstr "Aktivieren Sie Apple Pay (CAWL)"
 #: modules.local/bank-transfer-gateway/inc/fields.php:17
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/fields.php:17
 #| msgid "Enable Bank transfer by CAWL"
-msgid "Enable Bank Transfer by CAWL"
-msgstr "Banküberweisung von CAWL aktivieren"
+msgid "Enable Bank Transfer by Worldline"
+msgstr "Banküberweisung von Worldline aktivieren"
 
 #: modules.local/blik-gateway/inc/fields.php:17
 #: modules/worldline-blik-gateway/inc/fields.php:9
@@ -1692,3 +1692,27 @@ msgid "Your refund request for %s has been submitted and is pending approval."
 msgstr ""
 "Ihr Erstattungsantrag für %s wurde eingereicht und muss noch genehmigt "
 "werden."
+
+#: modules.local/config/inc/fields.php:166
+#: modules/inpsyde/worldline-config/inc/fields.php:166
+msgid "Display payment confirmation page"
+msgstr "Zahlungsbestätigungsseite anzeigen"
+
+#: modules.local/config/inc/fields.php:168
+#: modules/inpsyde/worldline-config/inc/fields.php:168
+msgid ""
+"By enabling this option, your customers will see the CAWL payment "
+"confirmation page"
+msgstr ""
+"Wenn Sie diese Option aktivieren, sehen Ihre Kunden die "
+"CAWL-Zahlungsbestätigungsseite"
+
+#: modules.local/config/inc/fields.php:172
+#: modules/inpsyde/worldline-config/inc/fields.php:172
+msgid ""
+"If enabled, customers will see a dedicated confirmation screen after payment "
+"is processed, confirming the payment and providing key details."
+msgstr ""
+"Wenn aktiviert, sehen Kunden nach der Zahlungsabwicklung einen speziellen "
+"Bestätigungsbildschirm, der die Zahlung bestätigt und wichtige Details "
+"bereitstellt."

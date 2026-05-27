@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the CAWL for WooCommerce package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-03-26 15:15+0000\n"
+"PO-Revision-Date: 2026-04-27 13:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -374,8 +374,8 @@ msgstr "Overschrijving"
 #: modules.local/bank-transfer-gateway/inc/services.php:35
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/services.php:35
 #| msgid "Bank transfer by CAWL"
-msgid "Bank Transfer by CAWL"
-msgstr "Bankoverschrijving door CAWL"
+msgid "Bank Transfer by Worldline"
+msgstr "Bankoverschrijving door Worldline"
 
 #. translators: %1$s - newlines
 #: modules.local/config/inc/fields.php:270
@@ -409,6 +409,15 @@ msgid ""
 msgstr ""
 "Door deze optie in te schakelen accepteert u alleen bankoverschrijvingen van "
 "uw klanten waarbij de betaling onmiddellijk is gedaan."
+
+#: modules.local/config/inc/fields.php:168
+#: modules/inpsyde/worldline-config/inc/fields.php:168
+msgid ""
+"By enabling this option, your customers will see the CAWL payment "
+"confirmation page"
+msgstr ""
+"Door deze optie in te schakelen, zien uw klanten de CAWL-"
+"betaalbevestigingspagina"
 
 msgid "Cancel"
 msgstr "Annuleren"
@@ -557,6 +566,11 @@ msgstr "Uitgeschakeld"
 msgid "Discover"
 msgstr "Discover"
 
+#: modules.local/config/inc/fields.php:166
+#: modules/inpsyde/worldline-config/inc/fields.php:166
+msgid "Display payment confirmation page"
+msgstr "Pagina met betalingsbevestiging weergeven"
+
 #: modules.local/config/inc/fields.php:156
 #: modules.local/config/inc/fields.php:184
 #: modules.local/config/inc/fields.php:248
@@ -584,8 +598,8 @@ msgstr "Apple Pay inschakelen (CAWL)"
 #: modules.local/bank-transfer-gateway/inc/fields.php:17
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/fields.php:17
 #| msgid "Enable Bank transfer by CAWL"
-msgid "Enable Bank Transfer by CAWL"
-msgstr "Bankoverschrijving door CAWL inschakelen"
+msgid "Enable Bank Transfer by Worldline"
+msgstr "Bankoverschrijving door Worldline inschakelen"
 
 #: modules.local/blik-gateway/inc/fields.php:17
 #: modules/worldline-blik-gateway/inc/fields.php:9
@@ -889,6 +903,16 @@ msgstr "iDEAL | Wero"
 #: modules/inpsyde/worldline-ideal-gateway/inc/services.php:33
 msgid "iDEAL | Wero (CAWL)"
 msgstr "iDEAL | Wero (CAWL)"
+
+#: modules.local/config/inc/fields.php:172
+#: modules/inpsyde/worldline-config/inc/fields.php:172
+msgid ""
+"If enabled, customers will see a dedicated confirmation screen after payment "
+"is processed, confirming the payment and providing key details."
+msgstr ""
+"Indien ingeschakeld, zien klanten een speciaal bevestigingsscherm nadat de "
+"betaling is verwerkt, die de betaling bevestigt en belangrijke details "
+"verstrekt."
 
 #| msgid ""
 #| "If you work in two steps (authorization followed by a capture), this "
@@ -1248,7 +1272,7 @@ msgstr ""
 #: modules.local/postfinance/src/Postfinance.php:84
 #: modules/inpsyde/worldline-postfinance-gateway/src/Postfinance.php:84
 msgid "PostFinance"
-msgstr "PostFinanciën"
+msgstr "PostFinance"
 
 #: modules.local/postfinance/src/Postfinance.php:89
 #: modules/inpsyde/worldline-postfinance-gateway/src/Postfinance.php:89

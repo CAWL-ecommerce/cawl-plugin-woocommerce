@@ -71,6 +71,18 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.18 - 2026-05-05**
+* Added: Configuration option to skip the CAWL payment confirmation page
+* Fixed: PostFinance, TWINT and Bank Transfer translation labels
+* Fixed: Compatibility with new SDK version
+* Fixed: Fix capture and cancel actions on legacy WooCommerce order pages
+
+**2.5.17 - 2026-04-08**
+* Fixed: Add exception handling for when the API is unavailable
+
+**2.5.16 - 2026-04-07**
+* Fixed: Renaming actions to prevent the WlopHtConfig object from being overwritten
+
 **2.5.15 - 2026-03-30**
 * Added: Support of Illicado payment method
 * Added: Support of Wero payment method

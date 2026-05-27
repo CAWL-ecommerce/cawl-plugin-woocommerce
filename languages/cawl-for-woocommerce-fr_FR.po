@@ -379,8 +379,8 @@ msgstr "Virement bancaire"
 #: modules.local/bank-transfer-gateway/inc/services.php:35
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/services.php:35
 #| msgid "Bank transfer by CAWL"
-msgid "Bank Transfer by CAWL"
-msgstr "Virement Bancaire par CAWL"
+msgid "Bank Transfer by Worldline"
+msgstr "Virement Bancaire par Worldline"
 
 #. translators: %1$s - newlines
 #: modules.local/config/inc/fields.php:270
@@ -592,8 +592,8 @@ msgstr "Activer Apple Pay (CAWL)"
 #: modules.local/bank-transfer-gateway/inc/fields.php:17
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/fields.php:17
 #| msgid "Enable Bank transfer by CAWL"
-msgid "Enable Bank Transfer by CAWL"
-msgstr "Activer le Virement Bancaire par CAWL"
+msgid "Enable Bank Transfer by Worldline"
+msgstr "Activer le Virement Bancaire par Worldline"
 
 #: modules.local/blik-gateway/inc/fields.php:17
 #: modules/worldline-blik-gateway/inc/fields.php:9
@@ -1714,3 +1714,27 @@ msgid "Your refund request for %s has been submitted and is pending approval."
 msgstr ""
 "Votre demande de remboursement pour %s a été soumise et est en attente "
 "d'approbation."
+
+#: modules.local/config/inc/fields.php:166
+#: modules/inpsyde/worldline-config/inc/fields.php:166
+msgid "Display payment confirmation page"
+msgstr "Afficher la page de confirmation de paiement"
+
+#: modules.local/config/inc/fields.php:168
+#: modules/inpsyde/worldline-config/inc/fields.php:168
+msgid ""
+"By enabling this option, your customers will see the CAWL payment "
+"confirmation page"
+msgstr ""
+"En activant cette option, vos clients verront la page de confirmation de "
+"paiement de CAWL"
+
+#: modules.local/config/inc/fields.php:172
+#: modules/inpsyde/worldline-config/inc/fields.php:172
+msgid ""
+"If enabled, customers will see a dedicated confirmation screen after payment "
+"is processed, confirming the payment and providing key details."
+msgstr ""
+"Si activé, les clients verront un écran de confirmation dédié après le "
+"traitement du paiement, confirmant le paiement et fournissant les "
+"informations clés."

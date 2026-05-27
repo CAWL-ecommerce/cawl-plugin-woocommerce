@@ -85,12 +85,12 @@ msgstr ""
 
 #: modules.local/bank-transfer-gateway/inc/fields.php:17
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/fields.php:17
-msgid "Enable Bank Transfer by CAWL"
+msgid "Enable Bank Transfer by Worldline"
 msgstr ""
 
 #: modules.local/bank-transfer-gateway/inc/services.php:35
 #: modules/inpsyde/worldline-bank-transfer-gateway/inc/services.php:35
-msgid "Bank Transfer by CAWL"
+msgid "Bank Transfer by Worldline"
 msgstr ""
 
 #: modules.local/bank-transfer-gateway/inc/services.php:37
@@ -304,6 +304,21 @@ msgstr ""
 #: modules/inpsyde/worldline-config/inc/fields.php:164
 #: modules/inpsyde/worldline-config/inc/fields.php:171
 msgid "Leave it empty for the default template."
+msgstr ""
+
+#: modules.local/config/inc/fields.php:166
+#: modules/inpsyde/worldline-config/inc/fields.php:166
+msgid "Display payment confirmation page"
+msgstr ""
+
+#: modules.local/config/inc/fields.php:168
+#: modules/inpsyde/worldline-config/inc/fields.php:168
+msgid "By enabling this option, your customers will see the CAWL payment confirmation page"
+msgstr ""
+
+#: modules.local/config/inc/fields.php:172
+#: modules/inpsyde/worldline-config/inc/fields.php:172
+msgid "If enabled, customers will see a dedicated confirmation screen after payment is processed, confirming the payment and providing key details."
 msgstr ""
 
 #: modules.local/config/inc/fields.php:169
