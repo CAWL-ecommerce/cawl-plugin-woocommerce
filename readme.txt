@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.18
+Stable tag: 2.5.20
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,16 @@ Automatic updates should work generally smoothly, but we still recommend you bac
 If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.21 - 2026-05-28 =
+* Fixed: Support new PAYID format
+* Changed: Order details display for split payments
+
+= 2.5.20 - 2026-05-27 =
+* Fix transaction error when coupon is applied
+
+= 2.5.19 - 2026-05-15 =
+* Customize title of the payment methods for Single Payment Buttons
 
 = 2.5.18 - 2026-04-27 =
 * Added: Configuration option to skip the CAWL payment confirmation page

@@ -48,6 +48,12 @@ class Postfinance implements PaymentMethodDefinition
     }
     public function title(ContainerInterface $container) : string
     {
+        $gatewayId = GatewayIds::POSTFINANCE;
+        $settings = (array) \get_option("woocommerce_{$gatewayId}_settings", []);
+        $custom = isset($settings['title']) && \is_string($settings['title']) ? \trim($settings['title']) : '';
+        if ($custom !== '') {
+            return $custom;
+        }
         return \__('PostFinance', 'cawl-for-woocommerce');
     }
     public function methodTitle(ContainerInterface $container) : string
@@ -96,7 +102,7 @@ class Postfinance implements PaymentMethodDefinition
     }
     public function formFields(ContainerInterface $container) : array
     {
-        return ['enabled' => ['title' => \__('Enable/Disable', 'cawl-for-woocommerce'), 'type' => 'checkbox', 'label' => \__('Enable PostFinance (CAWL)', 'cawl-for-woocommerce'), 'default' => 'no']];
+        return ['enabled' => ['title' => \__('Enable/Disable', 'cawl-for-woocommerce'), 'type' => 'checkbox', 'label' => \__('Enable PostFinance (CAWL)', 'cawl-for-woocommerce'), 'default' => 'no'], 'title' => ['title' => \__('Title', 'cawl-for-woocommerce'), 'type' => 'text', 'description' => \__('Personalize the payment method title on the checkout page.', 'cawl-for-woocommerce'), 'desc_tip' => \__('If left empty, the default payment method name will be displayed on the checkout page.', 'cawl-for-woocommerce'), 'placeholder' => \__('PostFinance', 'cawl-for-woocommerce')]];
     }
     public function icon(ContainerInterface $container) : string
     {

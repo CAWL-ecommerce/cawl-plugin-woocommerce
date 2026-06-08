@@ -10,6 +10,7 @@ use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\Pay
 use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\Struct\WcPriceStruct;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\AmountOfMoney;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\Customer;
+use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\Discount;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\LineItem;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\Order;
 use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\OrderReferences;
@@ -61,7 +62,10 @@ class WcOrderBasedOrderFactory implements WcOrderBasedOrderFactoryInterface
         }
         $discountWc = (float) $wcOrder->get_discount_total() + (float) $wcOrder->get_discount_tax();
         if ($discountWc !== 0.0) {
-            $wlopOrder->setDiscount($this->transformer->create(AmountOfMoney::class, new WcPriceStruct((string) $discountWc, $wcOrder->get_currency())));
+            $amountOfMoneyDiscount = $this->transformer->create(AmountOfMoney::class, new WcPriceStruct((string) $discountWc, $wcOrder->get_currency()));
+            $discount = new Discount();
+            $discount->setAmount($amountOfMoneyDiscount->getAmount());
+            $wlopOrder->setDiscount($discount);
         }
         try {
             $this->paymentMismatchValidator->validate($wlopOrder);
