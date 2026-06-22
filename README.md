@@ -71,6 +71,10 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.22 - 2026-06-05**
+* Added: Timeout settings for hosted checkout
+* Fixed: Load hosted tokenization only on checkout, harden API failure handling
+
 **2.5.21 - 2026-05-28**
 * Fixed: Support new PAYID format
 * Changed: Order details display for split payments 

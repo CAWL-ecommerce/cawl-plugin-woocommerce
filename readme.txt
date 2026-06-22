@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.20
+Stable tag: 2.5.22
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,10 @@ Automatic updates should work generally smoothly, but we still recommend you bac
 If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.22 - 2026-06-05 =
+* Added: Timeout settings for hosted checkout
+* Fixed: Load hosted tokenization only on checkout, harden API failure handling
 
 = 2.5.21 - 2026-05-28 =
 * Fixed: Support new PAYID format
