@@ -3,16 +3,16 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\HostedTokenization;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\HostedTokenization;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiResource;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ErrorResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateHostedTokenizationRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateHostedTokenizationResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\GetHostedTokenizationResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiResource;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ErrorResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreateHostedTokenizationRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreateHostedTokenizationResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\GetHostedTokenizationResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\ExceptionFactory;
 /**
  * HostedTokenization client.
  */
@@ -26,8 +26,8 @@ class HostedTokenizationClient extends ApiResource implements HostedTokenization
     public function createHostedTokenization(CreateHostedTokenizationRequest $body, ?CallContext $callContext = null) : CreateHostedTokenizationResponse
     {
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\CreateHostedTokenizationResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\CreateHostedTokenizationResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/hostedtokenizations'), $this->getClientMetaInfo(), $body, null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -41,8 +41,8 @@ class HostedTokenizationClient extends ApiResource implements HostedTokenization
     {
         $this->context['hostedTokenizationId'] = $hostedTokenizationId;
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\GetHostedTokenizationResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\GetHostedTokenizationResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->get($responseClassMap, $this->instantiateUri('/v2/{merchantId}/hostedtokenizations/{hostedTokenizationId}'), $this->getClientMetaInfo(), null, $callContext);
         } catch (ErrorResponseException $e) {

@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Dhii\\Validation\\": "src\/"
+            "Cawl\\Vendor\\Dhii\\Validation\\": "src\/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Dhii\\Validation\\UnitTest\\": "tests\/unit"
+            "Cawl\\Vendor\\Dhii\\Validation\\UnitTest\\": "tests\/unit"
         }
     },
     "scripts": {

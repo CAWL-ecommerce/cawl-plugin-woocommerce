@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Psr\\Log\\": "Psr\/Log\/"
+            "Cawl\\Vendor\\Psr\\Log\\": "Psr\/Log\/"
         }
     },
     "extra": {

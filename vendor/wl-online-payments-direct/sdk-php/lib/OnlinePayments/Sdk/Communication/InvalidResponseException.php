@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Communication;
 
 use RuntimeException;
 /**

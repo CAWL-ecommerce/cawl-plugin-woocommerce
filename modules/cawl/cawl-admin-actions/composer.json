@@ -1,0 +1,15 @@
+{
+    "name": "cawl\/cawl-admin-actions",
+    "description": "CAWL Admin Actions module",
+    "type": "worldline-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "CAWL"
+        }
+    ],
+    "require": {
+        "worldline\/modularity": "dev-main",
+        "worldline\/assets": "dev-main"
+    }
+}

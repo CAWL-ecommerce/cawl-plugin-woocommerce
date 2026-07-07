@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Authentication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Authentication;
 
 /**
  * Class Authenticator

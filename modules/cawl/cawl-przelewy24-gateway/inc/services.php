@@ -1,0 +1,58 @@
+<?php
+
+declare (strict_types=1);
+namespace Cawl\Vendor;
+
+// phpcs:disable CAWL.CodeQuality.LineLength.TooLong
+use Cawl\Vendor\Dhii\Services\Factories\Alias;
+use Cawl\Vendor\Dhii\Services\Factories\Constructor;
+use Cawl\Vendor\Dhii\Services\Factories\Value;
+use Cawl\Vendor\Dhii\Services\Factory;
+use Cawl\Vendor\Dhii\Services\Service;
+use Cawl\Vendor\Worldline\PaymentGateway\DefaultIconsRenderer;
+use Cawl\Vendor\Worldline\PaymentGateway\Icon;
+use Cawl\Vendor\Worldline\PaymentGateway\IconProviderInterface;
+use Cawl\Vendor\Worldline\PaymentGateway\StaticIconProvider;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Przelewy24Gateway\Przelewy24GatewayModule;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Przelewy24Gateway\Payment\Przelewy24RequestModifier;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Vaulting\WcTokenRepository;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\WorldlinePaymentGateway\Api\HostedCheckoutUrlFactory;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\WorldlinePaymentGateway\Api\WcOrderBasedOrderFactoryInterface;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\WorldlinePaymentGateway\GatewayIds;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\WorldlinePaymentGateway\Payment\HostedPaymentProcessor;
+use Cawl\Vendor\Psr\Container\ContainerInterface;
+return static function () : array {
+    $moduleRoot = \dirname(__FILE__, 2);
+    $gatewayId = GatewayIds::PRZELEWY24;
+    return ["payment_gateway.{$gatewayId}.form_fields" => Service::fromFile("{$moduleRoot}/inc/fields.php"), "payment_gateway.{$gatewayId}.method_title" => static fn(): string => \__('Przelewy24 (CAWL)', 'cawl-for-woocommerce'), "payment_gateway.{$gatewayId}.title" => new Factory([], static function () use($gatewayId) : string {
+        $settings = (array) \get_option("woocommerce_{$gatewayId}_settings", []);
+        $custom = isset($settings['title']) && \is_string($settings['title']) ? \trim($settings['title']) : '';
+        if ($custom !== '') {
+            return $custom;
+        }
+        return \__('Przelewy24', 'cawl-for-woocommerce');
+    }), "payment_gateway.{$gatewayId}.method_description" => static fn(): string => \__('Accept payments with Przelewy24.', 'cawl-for-woocommerce'), "payment_gateway.{$gatewayId}.description" => static fn(): string => '', "payment_gateway.{$gatewayId}.order_button_text" => static fn(): ?string => null, "payment_gateway.{$gatewayId}.payment_request_validator" => new Alias('payment_gateways.noop_payment_request_validator'), "payment_gateway.{$gatewayId}.payment_processor" => new Factory(['worldline_payment_gateway.hosted_checkout_url_factory', 'worldline_payment_gateway.wc_order_factory', 'vaulting.repository.wc.tokens.' . GatewayIds::HOSTED_CHECKOUT, 'worldline_payment_gateway.hosted_checkout_language', 'przelewy24.request_modifier'], static function (HostedCheckoutUrlFactory $hostedCheckoutUrlFactory, WcOrderBasedOrderFactoryInterface $wcOrderBasedOrderFactory, WcTokenRepository $wcTokenRepository, ?string $hostedCheckoutLanguage, Przelewy24RequestModifier $przelewy24RequestModifier) : HostedPaymentProcessor {
+        return new HostedPaymentProcessor($hostedCheckoutUrlFactory, $wcOrderBasedOrderFactory, $wcTokenRepository, $hostedCheckoutLanguage, $przelewy24RequestModifier);
+    }), "payment_gateway.{$gatewayId}.supports" => static function () : array {
+        return ['products', 'refunds'];
+    }, "payment_gateway.{$gatewayId}.refund_processor" => new Alias('payment_gateway.' . GatewayIds::HOSTED_CHECKOUT . '.refund_processor'), "przelewy24.availability.country_codes" => new Value(["PL", "DE"]), "przelewy24.availability.currencies" => new Value(["PLN"]), "payment_gateway.{$gatewayId}.availability_callback" => static function (ContainerInterface $container) : callable {
+        return static function () use($container) : bool {
+            try {
+                $billingCountry = \WC()->customer ? \WC()->customer->get_billing_country() : '';
+                $currency = \get_woocommerce_currency();
+                $availableCountries = $container->get('przelewy24.availability.country_codes');
+                $availableCurrencies = $container->get('przelewy24.availability.currencies');
+                \assert(\is_array($availableCountries));
+                \assert(\is_array($availableCurrencies));
+                return \in_array(\strtoupper($billingCountry), $availableCountries, \true) && \in_array(\strtoupper($currency), $availableCurrencies, \true);
+            } catch (\Throwable $exception) {
+                return \false;
+            }
+        };
+    }, "przelewy24.request_modifier" => new Constructor(Przelewy24RequestModifier::class, []), "payment_gateway.{$gatewayId}.method_icon_provider" => new Factory(['assets.get_module_static_asset_url'], static function (callable $getStaticAssetUrl) : IconProviderInterface {
+        /** @var string $src */
+        $src = $getStaticAssetUrl(Przelewy24GatewayModule::PACKAGE_NAME, "images/przelewy24-logo.svg");
+        $icon = new Icon('przelewy24-logo', $src, 'Przelewy24 logo');
+        return new StaticIconProvider($icon);
+    }), "payment_gateway.{$gatewayId}.gateway_icons_renderer" => new Constructor(DefaultIconsRenderer::class, ["payment_gateway.{$gatewayId}.method_icon_provider"])];
+};

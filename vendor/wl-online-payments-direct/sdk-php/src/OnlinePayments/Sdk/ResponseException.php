@@ -3,11 +3,11 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk;
+namespace Cawl\Vendor\OnlinePayments\Sdk;
 
 use RuntimeException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\APIError;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\DataObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\APIError;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\DataObject;
 /**
  * Class ResponseException
  *

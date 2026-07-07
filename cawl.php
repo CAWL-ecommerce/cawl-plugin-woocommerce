@@ -3,8 +3,8 @@
 /**
  * Plugin Name: CAWL
  * Description: CAWL.
- * Version:     2.5.22
- * SHA:        c7ea708
+ * Version:     2.5.23
+ * SHA:        c64386d
  * Requires at least: 6.3
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
@@ -18,10 +18,10 @@
 
 declare(strict_types=1);
 
-namespace Inpsyde\WorldlineForWoocommerce;
+namespace Worldline\WorldlineForWoocommerce;
 
-use Inpsyde\Modularity\Package;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Plugin;
+use Cawl\Vendor\Worldline\Modularity\Package;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Plugin;
 
 require_once __DIR__ . '/class-plugin.php';
 

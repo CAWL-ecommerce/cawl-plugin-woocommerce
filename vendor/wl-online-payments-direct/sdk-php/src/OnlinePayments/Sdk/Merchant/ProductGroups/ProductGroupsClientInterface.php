@@ -3,18 +3,18 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\ProductGroups;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\ProductGroups;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\AuthorizationException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\InvalidResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\GetPaymentProductGroupsResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentProductGroup;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\IdempotenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\PlatformException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ReferenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ValidationException;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiException;
+use Cawl\Vendor\OnlinePayments\Sdk\AuthorizationException;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\InvalidResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\GetPaymentProductGroupsResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PaymentProductGroup;
+use Cawl\Vendor\OnlinePayments\Sdk\IdempotenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\PlatformException;
+use Cawl\Vendor\OnlinePayments\Sdk\ReferenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\ValidationException;
 /**
  * ProductGroups client interface.
  */

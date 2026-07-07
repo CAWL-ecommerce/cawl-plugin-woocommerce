@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Symfony\\Polyfill\\Php80\\": ""
+            "Cawl\\Vendor\\Symfony\\Polyfill\\Php80\\": ""
         },
         "files": [
             "bootstrap.php"

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Package;
+namespace Cawl\Vendor\Dhii\Package;
 
 use Exception;
-use Syde\Vendor\Cawl\Dhii\Package\Version\VersionInterface;
+use Cawl\Vendor\Dhii\Package\Version\VersionInterface;
 /**
  * Represents a software package.
  */

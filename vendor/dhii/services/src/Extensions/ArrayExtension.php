@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Services\Extensions;
+namespace Cawl\Vendor\Dhii\Services\Extensions;
 
-use Syde\Vendor\Cawl\Dhii\Services\ResolveKeysCapableTrait;
-use Syde\Vendor\Cawl\Dhii\Services\Service;
-use Syde\Vendor\Cawl\Psr\Container\ContainerInterface;
+use Cawl\Vendor\Dhii\Services\ResolveKeysCapableTrait;
+use Cawl\Vendor\Dhii\Services\Service;
+use Cawl\Vendor\Psr\Container\ContainerInterface;
 /**
  * An extension implementation that extends an array service.
  *

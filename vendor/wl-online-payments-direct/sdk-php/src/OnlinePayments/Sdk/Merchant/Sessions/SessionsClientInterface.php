@@ -3,18 +3,18 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Sessions;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\Sessions;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\AuthorizationException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\InvalidResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\SessionRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\SessionResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\IdempotenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\PlatformException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ReferenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ValidationException;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiException;
+use Cawl\Vendor\OnlinePayments\Sdk\AuthorizationException;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\InvalidResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\SessionRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\SessionResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\IdempotenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\PlatformException;
+use Cawl\Vendor\OnlinePayments\Sdk\ReferenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\ValidationException;
 /**
  * Sessions client interface.
  */

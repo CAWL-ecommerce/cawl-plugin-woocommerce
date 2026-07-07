@@ -1,5 +1,5 @@
 <?php
 
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
-return array('dependencies' => array(), 'version' => '6578b8ab983c6ed6e2f6');
+return array('dependencies' => array(), 'version' => '2257a3083494eb98a90b');

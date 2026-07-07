@@ -3,20 +3,20 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Products;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\Products;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\AuthorizationException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\InvalidResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\GetPaymentProductsResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentProduct;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentProductNetworksResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\ProductDirectory;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\IdempotenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\PlatformException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ReferenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ValidationException;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiException;
+use Cawl\Vendor\OnlinePayments\Sdk\AuthorizationException;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\InvalidResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\GetPaymentProductsResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PaymentProduct;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PaymentProductNetworksResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\ProductDirectory;
+use Cawl\Vendor\OnlinePayments\Sdk\IdempotenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\PlatformException;
+use Cawl\Vendor\OnlinePayments\Sdk\ReferenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\ValidationException;
 /**
  * Products client interface.
  */

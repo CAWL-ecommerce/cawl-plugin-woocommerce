@@ -3,20 +3,20 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Mandates;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\Mandates;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\AuthorizationException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\InvalidResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateMandateRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateMandateResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\GetMandateResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RevokeMandateRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\IdempotenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\PlatformException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ReferenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ValidationException;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiException;
+use Cawl\Vendor\OnlinePayments\Sdk\AuthorizationException;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\InvalidResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreateMandateRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreateMandateResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\GetMandateResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\RevokeMandateRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\IdempotenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\PlatformException;
+use Cawl\Vendor\OnlinePayments\Sdk\ReferenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\ValidationException;
 /**
  * Mandates client interface.
  */

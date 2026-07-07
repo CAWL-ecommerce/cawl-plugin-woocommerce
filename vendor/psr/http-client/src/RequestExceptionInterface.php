@@ -1,8 +1,8 @@
 <?php
 
-namespace Syde\Vendor\Cawl\Psr\Http\Client;
+namespace Cawl\Vendor\Psr\Http\Client;
 
-use Syde\Vendor\Cawl\Psr\Http\Message\RequestInterface;
+use Cawl\Vendor\Psr\Http\Message\RequestInterface;
 /**
  * Exception for when a request failed.
  *

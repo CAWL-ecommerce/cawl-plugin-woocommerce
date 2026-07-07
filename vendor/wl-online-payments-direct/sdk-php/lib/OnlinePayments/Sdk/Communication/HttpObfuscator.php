@@ -1,9 +1,9 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Communication;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\BodyObfuscator;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\HeaderObfuscator;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\BodyObfuscator;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\HeaderObfuscator;
 /**
  * Class HttpObfuscator
  *

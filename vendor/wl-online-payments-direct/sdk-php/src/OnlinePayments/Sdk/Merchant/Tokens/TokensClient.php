@@ -3,16 +3,16 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Tokens;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\Tokens;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiResource;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ErrorResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateTokenRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreatedTokenResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\TokenResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiResource;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ErrorResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreateTokenRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreatedTokenResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\TokenResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\ExceptionFactory;
 /**
  * Tokens client.
  */
@@ -26,8 +26,8 @@ class TokensClient extends ApiResource implements TokensClientInterface
     public function createToken(CreateTokenRequest $body, ?CallContext $callContext = null) : CreatedTokenResponse
     {
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\CreatedTokenResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\CreatedTokenResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/tokens'), $this->getClientMetaInfo(), $body, null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -41,8 +41,8 @@ class TokensClient extends ApiResource implements TokensClientInterface
     {
         $this->context['tokenId'] = $tokenId;
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\TokenResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\TokenResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->get($responseClassMap, $this->instantiateUri('/v2/{merchantId}/tokens/{tokenId}'), $this->getClientMetaInfo(), null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -56,7 +56,7 @@ class TokensClient extends ApiResource implements TokensClientInterface
     {
         $this->context['tokenId'] = $tokenId;
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             $this->getCommunicator()->delete($responseClassMap, $this->instantiateUri('/v2/{merchantId}/tokens/{tokenId}'), $this->getClientMetaInfo(), null, $callContext);
         } catch (ErrorResponseException $e) {

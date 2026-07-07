@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\JSON;
+namespace Cawl\Vendor\OnlinePayments\Sdk\JSON;
 
 use stdClass;
 use UnexpectedValueException;

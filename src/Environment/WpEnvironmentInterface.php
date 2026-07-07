@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Environment;
+namespace Cawl\Vendor\Worldline\WorldlineForWoocommerce\Environment;
 
 /**
  * Represents WordPress environment.

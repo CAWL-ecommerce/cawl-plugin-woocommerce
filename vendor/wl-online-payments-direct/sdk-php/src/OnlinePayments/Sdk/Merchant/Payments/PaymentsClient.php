@@ -3,23 +3,23 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Payments;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\Payments;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiResource;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ErrorResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CancelPaymentRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CancelPaymentResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CapturePaymentRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CaptureResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreatePaymentRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreatePaymentResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentDetailsResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RefundRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RefundResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiResource;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ErrorResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CancelPaymentRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CancelPaymentResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CapturePaymentRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CaptureResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreatePaymentRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreatePaymentResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PaymentDetailsResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PaymentResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\RefundRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\RefundResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\ExceptionFactory;
 /**
  * Payments client.
  */
@@ -33,8 +33,8 @@ class PaymentsClient extends ApiResource implements PaymentsClientInterface
     public function createPayment(CreatePaymentRequest $body, ?CallContext $callContext = null) : CreatePaymentResponse
     {
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\CreatePaymentResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\PaymentErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\CreatePaymentResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\PaymentErrorResponse';
         try {
             return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/payments'), $this->getClientMetaInfo(), $body, null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -48,8 +48,8 @@ class PaymentsClient extends ApiResource implements PaymentsClientInterface
     {
         $this->context['paymentId'] = $paymentId;
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\PaymentResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\PaymentResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->get($responseClassMap, $this->instantiateUri('/v2/{merchantId}/payments/{paymentId}'), $this->getClientMetaInfo(), null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -63,8 +63,8 @@ class PaymentsClient extends ApiResource implements PaymentsClientInterface
     {
         $this->context['paymentId'] = $paymentId;
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\PaymentDetailsResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\PaymentDetailsResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->get($responseClassMap, $this->instantiateUri('/v2/{merchantId}/payments/{paymentId}/details'), $this->getClientMetaInfo(), null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -78,8 +78,8 @@ class PaymentsClient extends ApiResource implements PaymentsClientInterface
     {
         $this->context['paymentId'] = $paymentId;
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\CancelPaymentResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\CancelPaymentResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/payments/{paymentId}/cancel'), $this->getClientMetaInfo(), $body, null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -93,8 +93,8 @@ class PaymentsClient extends ApiResource implements PaymentsClientInterface
     {
         $this->context['paymentId'] = $paymentId;
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\CaptureResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\CaptureResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/payments/{paymentId}/capture'), $this->getClientMetaInfo(), $body, null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -108,8 +108,8 @@ class PaymentsClient extends ApiResource implements PaymentsClientInterface
     {
         $this->context['paymentId'] = $paymentId;
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\RefundResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\RefundErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\RefundResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\RefundErrorResponse';
         try {
             return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/payments/{paymentId}/refund'), $this->getClientMetaInfo(), $body, null, $callContext);
         } catch (ErrorResponseException $e) {

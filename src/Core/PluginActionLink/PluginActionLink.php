@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core\PluginActionLink;
+namespace Cawl\Vendor\Worldline\WorldlineForWoocommerce\Core\PluginActionLink;
 
-use Syde\Vendor\Cawl\Psr\Http\Message\UriInterface;
+use Cawl\Vendor\Psr\Http\Message\UriInterface;
 class PluginActionLink
 {
     private string $slug;

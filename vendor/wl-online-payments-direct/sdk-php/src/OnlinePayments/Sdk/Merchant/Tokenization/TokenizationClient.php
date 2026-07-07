@@ -3,16 +3,16 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Tokenization;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\Tokenization;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiResource;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ErrorResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateCertificateResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CsrRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\DetokenizationResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ExceptionFactory;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiResource;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ErrorResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreateCertificateResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CsrRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\DetokenizationResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\ExceptionFactory;
 /**
  * Tokenization client.
  */
@@ -26,8 +26,8 @@ class TokenizationClient extends ApiResource implements TokenizationClientInterf
     public function createCertificate(CsrRequest $body, ?CallContext $callContext = null) : CreateCertificateResponse
     {
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\CreateCertificateResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\CreateCertificateResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->post($responseClassMap, $this->instantiateUri('/v2/{merchantId}/detokenize/csr'), $this->getClientMetaInfo(), $body, null, $callContext);
         } catch (ErrorResponseException $e) {
@@ -40,8 +40,8 @@ class TokenizationClient extends ApiResource implements TokenizationClientInterf
     public function getCardDataByTokens(GetCardDataByTokensParams $query, ?CallContext $callContext = null) : DetokenizationResponse
     {
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\DetokenizationResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\DetokenizationResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->get($responseClassMap, $this->instantiateUri('/v2/{merchantId}/detokenize/tokens'), $this->getClientMetaInfo(), $query, $callContext);
         } catch (ErrorResponseException $e) {
@@ -54,8 +54,8 @@ class TokenizationClient extends ApiResource implements TokenizationClientInterf
     public function getCardDataByPayments(GetCardDataByPaymentsParams $query, ?CallContext $callContext = null) : DetokenizationResponse
     {
         $responseClassMap = new ResponseClassMap();
-        $responseClassMap->defaultSuccessResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\DetokenizationResponse';
-        $responseClassMap->defaultErrorResponseClassName = 'Syde\\Vendor\\Cawl\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
+        $responseClassMap->defaultSuccessResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\DetokenizationResponse';
+        $responseClassMap->defaultErrorResponseClassName = 'Cawl\\Vendor\\OnlinePayments\\Sdk\\Domain\\ErrorResponse';
         try {
             return $this->getCommunicator()->get($responseClassMap, $this->instantiateUri('/v2/{merchantId}/detokenize/payments'), $this->getClientMetaInfo(), $query, $callContext);
         } catch (ErrorResponseException $e) {

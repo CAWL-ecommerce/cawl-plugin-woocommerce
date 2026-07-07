@@ -21,13 +21,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Dhii\\Validator\\": "src"
+            "Cawl\\Vendor\\Dhii\\Validator\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Dhii\\Validator\\Test\\Func\\": "tests\/functional",
-            "Syde\\Vendor\\Cawl\\Dhii\\Validator\\Test\\Unit\\": "tests\/unit"
+            "Cawl\\Vendor\\Dhii\\Validator\\Test\\Func\\": "tests\/functional",
+            "Cawl\\Vendor\\Dhii\\Validator\\Test\\Unit\\": "tests\/unit"
         }
     },
     "extra": {

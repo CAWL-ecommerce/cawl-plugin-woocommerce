@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Versions;
+namespace Cawl\Vendor\Dhii\Versions;
 
-use Syde\Vendor\Cawl\Dhii\Package\Version\StringVersionFactoryInterface;
-use Syde\Vendor\Cawl\Dhii\Package\Version\VersionInterface;
+use Cawl\Vendor\Dhii\Package\Version\StringVersionFactoryInterface;
+use Cawl\Vendor\Dhii\Package\Version\VersionInterface;
 use DomainException;
 use Exception;
 use RangeException;

@@ -1,29 +1,29 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
-use Syde\Vendor\Cawl\Dhii\Package\Version\StringVersionFactoryInterface;
-use Syde\Vendor\Cawl\Dhii\Services\Factories\Alias;
-use Syde\Vendor\Cawl\Dhii\Services\Factories\Value;
-use Syde\Vendor\Cawl\Dhii\Services\Factory;
-use Syde\Vendor\Cawl\Dhii\Validation\ValidatorInterface;
-use Syde\Vendor\Cawl\Dhii\Validator\CallbackValidator;
-use Syde\Vendor\Cawl\Dhii\Validator\CompositeValidator;
-use Syde\Vendor\Cawl\Dhii\Versions\StringVersionFactory;
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Package;
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Properties\PluginProperties;
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Properties\Properties;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Admin\CancelAuthorizationUi;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core\PluginActionLink\PluginActionLink;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core\PluginActionLink\PluginActionLinkRegistry;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Environment\WpEnvironmentFactory;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Environment\WpEnvironmentFactoryInterface;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Environment\WpEnvironmentInterface;
-use Syde\Vendor\Cawl\Psr\Container\ContainerInterface;
-use Syde\Vendor\Cawl\Psr\Http\Message\UriFactoryInterface;
-use Syde\Vendor\Cawl\Psr\Http\Message\UriInterface;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Admin\CaptureAuthorizationUi;
+use Cawl\Vendor\Dhii\Package\Version\StringVersionFactoryInterface;
+use Cawl\Vendor\Dhii\Services\Factories\Alias;
+use Cawl\Vendor\Dhii\Services\Factories\Value;
+use Cawl\Vendor\Dhii\Services\Factory;
+use Cawl\Vendor\Dhii\Validation\ValidatorInterface;
+use Cawl\Vendor\Dhii\Validator\CallbackValidator;
+use Cawl\Vendor\Dhii\Validator\CompositeValidator;
+use Cawl\Vendor\Dhii\Versions\StringVersionFactory;
+use Cawl\Vendor\Worldline\Modularity\Package;
+use Cawl\Vendor\Worldline\Modularity\Properties\PluginProperties;
+use Cawl\Vendor\Worldline\Modularity\Properties\Properties;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Admin\CancelAuthorizationUi;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Core\PluginActionLink\PluginActionLink;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Core\PluginActionLink\PluginActionLinkRegistry;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Environment\WpEnvironmentFactory;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Environment\WpEnvironmentFactoryInterface;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Environment\WpEnvironmentInterface;
+use Cawl\Vendor\Psr\Container\ContainerInterface;
+use Cawl\Vendor\Psr\Http\Message\UriFactoryInterface;
+use Cawl\Vendor\Psr\Http\Message\UriInterface;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Admin\CaptureAuthorizationUi;
 return static function (string $rootPath) : array {
     $config = (require __DIR__ . '/../config.php');
     return ['assets.get_module_asset_url' => new Factory([Package::PROPERTIES], static function (PluginProperties $props) : callable {
@@ -32,7 +32,7 @@ return static function (string $rootPath) : array {
         };
     }), 'assets.get_module_static_asset_url' => new Factory([Package::PROPERTIES], static function (PluginProperties $props) : callable {
         return static function (string $packageName, string $assetName) use($props) : string {
-            return $props->baseUrl() . "modules/inpsyde/{$packageName}/assets/{$assetName}";
+            return $props->baseUrl() . "modules/cawl/{$packageName}/assets/{$assetName}";
         };
     }), 'core.environment_validator' => static function (ContainerInterface $container) : ValidatorInterface {
         /** @var ValidatorInterface $phpVersionValidator */
@@ -120,7 +120,7 @@ return static function (string $rootPath) : array {
             return null;
         }
         return $uriFactory->createUri($restUrl);
-    }), 'inpsyde_logger.native_wc_logger' => static function () : \WC_Logger_Interface {
+    }), 'worldline_logger.native_wc_logger' => static function () : \WC_Logger_Interface {
         return \wc_get_logger();
     }, 'core.is_debug_logging_enabled' => new Alias('config.debug_logging'), 'core.is_logging_enabled' => new Factory(['core.is_debug_logging_enabled'], static function (bool $debugLogging) : bool {
         return $debugLogging || \apply_filters('wlop.logging_enabled', \true);

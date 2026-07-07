@@ -1,19 +1,19 @@
 <?php
 
-// phpcs:disable Inpsyde.CodeQuality.LineLength.TooLong
+// phpcs:disable Worldline.CodeQuality.LineLength.TooLong
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core;
+namespace Cawl\Vendor\Worldline\WorldlineForWoocommerce\Core;
 
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Module\ExecutableModule;
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Module\ExtendingModule;
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Module\ModuleClassNameIdTrait;
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Module\ServiceModule;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Admin\CancelAuthorizationUi;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Admin\CaptureAuthorizationUi;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core\PluginActionLink\PluginActionLinkRegistry;
-use Syde\Vendor\Cawl\Psr\Container\ContainerExceptionInterface;
-use Syde\Vendor\Cawl\Psr\Container\ContainerInterface;
-use Syde\Vendor\Cawl\Psr\Container\NotFoundExceptionInterface;
+use Cawl\Vendor\Worldline\Modularity\Module\ExecutableModule;
+use Cawl\Vendor\Worldline\Modularity\Module\ExtendingModule;
+use Cawl\Vendor\Worldline\Modularity\Module\ModuleClassNameIdTrait;
+use Cawl\Vendor\Worldline\Modularity\Module\ServiceModule;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Admin\CancelAuthorizationUi;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Admin\CaptureAuthorizationUi;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Core\PluginActionLink\PluginActionLinkRegistry;
+use Cawl\Vendor\Psr\Container\ContainerExceptionInterface;
+use Cawl\Vendor\Psr\Container\ContainerInterface;
+use Cawl\Vendor\Psr\Container\NotFoundExceptionInterface;
 class CoreModule implements ExecutableModule, ServiceModule, ExtendingModule
 {
     use ModuleClassNameIdTrait;

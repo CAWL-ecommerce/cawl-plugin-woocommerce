@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Module\Module;
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Package;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core\WorldlineProperties;
+use Cawl\Vendor\Worldline\Modularity\Module\Module;
+use Cawl\Vendor\Worldline\Modularity\Package;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Core\WorldlineProperties;
 return static function (string $mainPluginFile, callable $onError, Module ...$modules) : Package {
     $autoload = \dirname($mainPluginFile) . '/vendor/autoload.php';
     /** Older Woocommerce versions don't set version plugin headers.

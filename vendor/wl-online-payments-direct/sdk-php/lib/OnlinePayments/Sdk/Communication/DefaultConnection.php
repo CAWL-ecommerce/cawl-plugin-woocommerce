@@ -1,16 +1,16 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Communication;
 
 use ErrorException;
 use Exception;
-use Syde\Vendor\Cawl\Robtimus\Multipart\MultipartFormData;
+use Cawl\Vendor\Robtimus\Multipart\MultipartFormData;
 use UnexpectedValueException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CommunicatorConfiguration;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\BodyObfuscator;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\CommunicatorLogger;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\HeaderObfuscator;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ProxyConfiguration;
+use Cawl\Vendor\OnlinePayments\Sdk\CommunicatorConfiguration;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\BodyObfuscator;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\CommunicatorLogger;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\HeaderObfuscator;
+use Cawl\Vendor\OnlinePayments\Sdk\ProxyConfiguration;
 /**
  * Class ApiException
  *

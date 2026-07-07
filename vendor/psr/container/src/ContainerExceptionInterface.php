@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\Psr\Container;
+namespace Cawl\Vendor\Psr\Container;
 
 use Throwable;
 /**

@@ -1,10 +1,10 @@
 <?php
 
-// phpcs:disable Inpsyde.CodeQuality.ArgumentTypeDeclaration.NoArgumentType
+// phpcs:disable Worldline.CodeQuality.ArgumentTypeDeclaration.NoArgumentType
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
-use Syde\Vendor\Cawl\Dhii\Validation\Exception\ValidationFailedExceptionInterface;
+use Cawl\Vendor\Dhii\Validation\Exception\ValidationFailedExceptionInterface;
 return (static function () : callable {
     /**
      * @psalm-suppress MissingClosureParamType

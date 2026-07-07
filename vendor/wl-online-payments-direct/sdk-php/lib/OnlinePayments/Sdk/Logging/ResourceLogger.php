@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Logging;
 
 use Exception;
 use UnexpectedValueException;

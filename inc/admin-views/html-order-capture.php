@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\WorldlinePaymentGateway\OrderMetaKeys;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\WorldlinePaymentGateway\OrderMetaKeys;
 \defined('ABSPATH') || exit;
 /** @var \WC_Order $order */
 $currency = $order->get_currency();

@@ -21,7 +21,7 @@ const modulesAssets = {
         'frontend/ts/main.ts',
         'frontend/ts/blocks.tsx',
     ],
-    'worldline-payment-gateway': [
+    'cawl-payment-gateway': [
         'backend/ts/main.ts',
     ],
     'admin-actions': [
@@ -38,10 +38,10 @@ for (const [moduleId, assets] of Object.entries(modulesAssets)) {
             .filter(p => !['ts', 'js'].includes(p))
             .join('-');
         let fullModuleId = moduleId;
-        if (!fullModuleId.startsWith('worldline-')) {
-            fullModuleId = 'worldline-' + fullModuleId;
+        if (!fullModuleId.startsWith('cawl-')) {
+            fullModuleId = 'cawl-' + fullModuleId;
         }
-        const path = `./modules/inpsyde/${fullModuleId}/resources/${relativePath}`;
+        const path = `./modules/cawl/${fullModuleId}/resources/${relativePath}`;
 
         entries[name] = path;
     }

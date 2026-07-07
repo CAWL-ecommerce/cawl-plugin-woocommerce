@@ -3,19 +3,19 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\HostedTokenization;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\HostedTokenization;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\AuthorizationException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\InvalidResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateHostedTokenizationRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreateHostedTokenizationResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\GetHostedTokenizationResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\IdempotenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\PlatformException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ReferenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ValidationException;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiException;
+use Cawl\Vendor\OnlinePayments\Sdk\AuthorizationException;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\InvalidResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreateHostedTokenizationRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreateHostedTokenizationResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\GetHostedTokenizationResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\IdempotenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\PlatformException;
+use Cawl\Vendor\OnlinePayments\Sdk\ReferenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\ValidationException;
 /**
  * HostedTokenization client interface.
  */

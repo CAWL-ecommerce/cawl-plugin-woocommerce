@@ -3,9 +3,9 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\PaymentLinks;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\PaymentLinks;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\RequestObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\RequestObject;
 /**
  * Query parameters for Get payment links
  *

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Package\Version\Constraint;
+namespace Cawl\Vendor\Dhii\Package\Version\Constraint;
 
-use Syde\Vendor\Cawl\Dhii\Package\Version\Constraint\Exception\ConstraintFailedExceptionInterface;
-use Syde\Vendor\Cawl\Dhii\Package\Version\VersionInterface;
-use Syde\Vendor\Cawl\Dhii\Validation\ValidatorInterface;
+use Cawl\Vendor\Dhii\Package\Version\Constraint\Exception\ConstraintFailedExceptionInterface;
+use Cawl\Vendor\Dhii\Package\Version\VersionInterface;
+use Cawl\Vendor\Dhii\Validation\ValidatorInterface;
 use Exception;
 /**
  * Represents a version constraint.

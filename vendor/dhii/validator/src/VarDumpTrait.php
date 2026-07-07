@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Validator;
+namespace Cawl\Vendor\Dhii\Validator;
 
 use RuntimeException;
 /**

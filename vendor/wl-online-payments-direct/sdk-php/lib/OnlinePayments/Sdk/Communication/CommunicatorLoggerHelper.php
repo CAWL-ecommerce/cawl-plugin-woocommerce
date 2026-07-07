@@ -1,11 +1,11 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Communication;
 
 use Exception;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\BodyObfuscator;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\CommunicatorLogger;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\HeaderObfuscator;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\BodyObfuscator;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\CommunicatorLogger;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\HeaderObfuscator;
 /**
  * Class CommunicatorLoggerHelper
  *

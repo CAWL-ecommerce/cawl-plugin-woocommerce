@@ -1,9 +1,9 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk;
+namespace Cawl\Vendor\OnlinePayments\Sdk;
 
 use UnexpectedValueException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\ShoppingCartExtension;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\ShoppingCartExtension;
 /**
  * Class CommunicatorConfiguration
  *

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Environment;
+namespace Cawl\Vendor\Worldline\WorldlineForWoocommerce\Environment;
 
-use Syde\Vendor\Cawl\Dhii\Package\Version\StringVersionFactoryInterface;
+use Cawl\Vendor\Dhii\Package\Version\StringVersionFactoryInterface;
 use Exception;
 use WooCommerce;
 use function do_action;

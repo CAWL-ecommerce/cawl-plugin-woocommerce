@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Psr\\Container\\": "src\/"
+            "Cawl\\Vendor\\Psr\\Container\\": "src\/"
         }
     }
 }

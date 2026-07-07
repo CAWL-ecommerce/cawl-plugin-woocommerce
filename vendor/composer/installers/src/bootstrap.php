@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
 use Composer\Autoload\ClassLoader;
 function includeIfExists(string $file) : ?ClassLoader

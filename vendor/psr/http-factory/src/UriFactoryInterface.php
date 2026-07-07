@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\Psr\Http\Message;
+namespace Cawl\Vendor\Psr\Http\Message;
 
 interface UriFactoryInterface
 {

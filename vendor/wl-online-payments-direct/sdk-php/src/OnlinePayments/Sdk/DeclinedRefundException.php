@@ -3,11 +3,11 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk;
+namespace Cawl\Vendor\OnlinePayments\Sdk;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\DataObject;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RefundErrorResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RefundResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\DataObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\RefundErrorResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\RefundResponse;
 /**
  * Class DeclinedRefundException
  *

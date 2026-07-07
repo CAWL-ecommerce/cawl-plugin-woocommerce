@@ -1,9 +1,9 @@
 <?php
 
-namespace Syde\Vendor\Cawl\Psr\Http\Server;
+namespace Cawl\Vendor\Psr\Http\Server;
 
-use Syde\Vendor\Cawl\Psr\Http\Message\ResponseInterface;
-use Syde\Vendor\Cawl\Psr\Http\Message\ServerRequestInterface;
+use Cawl\Vendor\Psr\Http\Message\ResponseInterface;
+use Cawl\Vendor\Psr\Http\Message\ServerRequestInterface;
 /**
  * Participant in processing a server request and response.
  *

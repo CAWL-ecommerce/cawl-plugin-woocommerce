@@ -1,9 +1,9 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Communication;
 
 use UnexpectedValueException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\UploadableFile;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\UploadableFile;
 /**
  * Class MultipartFormDataObject
  *

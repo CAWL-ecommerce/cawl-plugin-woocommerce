@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core\PluginActionLink;
+namespace Cawl\Vendor\Worldline\WorldlineForWoocommerce\Core\PluginActionLink;
 
 class PluginActionLinkRegistry
 {

@@ -23,15 +23,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Dhii\\Services\\": "src"
+            "Cawl\\Vendor\\Dhii\\Services\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Dhii\\Services\\Tests\\Unit\\": "tests\/unit",
-            "Syde\\Vendor\\Cawl\\Dhii\\Services\\Tests\\Func\\": "tests\/functional",
-            "Syde\\Vendor\\Cawl\\Dhii\\Services\\Tests\\Stubs\\": "tests\/stubs",
-            "Syde\\Vendor\\Cawl\\Dhii\\Services\\Tests\\Helpers\\": "tests\/helpers"
+            "Cawl\\Vendor\\Dhii\\Services\\Tests\\Unit\\": "tests\/unit",
+            "Cawl\\Vendor\\Dhii\\Services\\Tests\\Func\\": "tests\/functional",
+            "Cawl\\Vendor\\Dhii\\Services\\Tests\\Stubs\\": "tests\/stubs",
+            "Cawl\\Vendor\\Dhii\\Services\\Tests\\Helpers\\": "tests\/helpers"
         }
     },
     "scripts": {

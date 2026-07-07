@@ -3,28 +3,28 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Payments;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\Payments;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\AuthorizationException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\InvalidResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\DeclinedPaymentException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\DeclinedRefundException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CancelPaymentRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CancelPaymentResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CapturePaymentRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CaptureResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreatePaymentRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CreatePaymentResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentDetailsResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PaymentResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RefundRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\RefundResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\IdempotenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\PlatformException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ReferenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ValidationException;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiException;
+use Cawl\Vendor\OnlinePayments\Sdk\AuthorizationException;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\InvalidResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\DeclinedPaymentException;
+use Cawl\Vendor\OnlinePayments\Sdk\DeclinedRefundException;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CancelPaymentRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CancelPaymentResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CapturePaymentRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CaptureResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreatePaymentRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CreatePaymentResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PaymentDetailsResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PaymentResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\RefundRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\RefundResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\IdempotenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\PlatformException;
+use Cawl\Vendor\OnlinePayments\Sdk\ReferenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\ValidationException;
 /**
  * Payments client interface.
  */

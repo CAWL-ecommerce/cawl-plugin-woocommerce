@@ -1,0 +1,18 @@
+<?php
+
+declare (strict_types=1);
+namespace Cawl\Vendor;
+
+// phpcs:disable CAWL.CodeQuality.LineLength
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\WorldlinePaymentGateway\GatewayIds;
+use Cawl\Vendor\Psr\Container\ContainerInterface;
+use Cawl\Vendor\Psr\Log\LogLevel;
+return static function () : array {
+    return ['payment_gateways' => static function (array $gateways, ContainerInterface $container) : array {
+        $gateways[] = GatewayIds::HOSTED_CHECKOUT;
+        return $gateways;
+    }, 'worldline_logger.log_events' => static function (array $previous, ContainerInterface $container) : array {
+        $logEventsToAdd = [['name' => 'wlop.hosted_payment_error', 'log_level' => LogLevel::ERROR, 'message' => 'Error encountered while retrieving hosted checkout URL during checkout process: {exception} Errors: {errors}']];
+        return \array_merge($previous, $logEventsToAdd);
+    }];
+};

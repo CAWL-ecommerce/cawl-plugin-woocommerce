@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk;
+namespace Cawl\Vendor\OnlinePayments\Sdk;
 
 /**
  * Class ProxyConfiguration

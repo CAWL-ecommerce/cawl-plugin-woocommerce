@@ -71,6 +71,12 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.23 - 2026-06-09**
+* Added: Changed integrator references
+* Fixed: Broken translations
+* Fixed: Order status after transaction cancellation
+* Fixed: Brand gateway directory names
+
 **2.5.22 - 2026-06-05**
 * Added: Timeout settings for hosted checkout
 * Fixed: Load hosted tokenization only on checkout, harden API failure handling

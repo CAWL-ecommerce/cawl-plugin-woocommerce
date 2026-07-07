@@ -3,29 +3,29 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Captures\CapturesClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\CofSeries\CofSeriesClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Complete\CompleteClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\HostedCheckout\HostedCheckoutClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\HostedFields\HostedFieldsClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\HostedTokenization\HostedTokenizationClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Mandates\MandatesClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\MerchantBatch\MerchantBatchClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\PaymentLinks\PaymentLinksClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Payments\PaymentsClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Payouts\PayoutsClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\PrivacyPolicy\PrivacyPolicyClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\ProductGroups\ProductGroupsClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Products\ProductsClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Refunds\RefundsClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Services\ServicesClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Sessions\SessionsClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Subsequent\SubsequentClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Tokenization\TokenizationClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Tokens\TokensClientInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Webhooks\WebhooksClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Captures\CapturesClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\CofSeries\CofSeriesClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Complete\CompleteClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\HostedCheckout\HostedCheckoutClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\HostedFields\HostedFieldsClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\HostedTokenization\HostedTokenizationClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Mandates\MandatesClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\MerchantBatch\MerchantBatchClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\PaymentLinks\PaymentLinksClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Payments\PaymentsClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Payouts\PayoutsClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\PrivacyPolicy\PrivacyPolicyClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\ProductGroups\ProductGroupsClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Products\ProductsClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Refunds\RefundsClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Services\ServicesClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Sessions\SessionsClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Subsequent\SubsequentClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Tokenization\TokenizationClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Tokens\TokensClientInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\Webhooks\WebhooksClientInterface;
 /**
  * Merchant client interface.
  */

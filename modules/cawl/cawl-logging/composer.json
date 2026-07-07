@@ -1,0 +1,30 @@
+{
+    "name": "cawl\/cawl-logging",
+    "description": "CAWL module",
+    "type": "worldline-module",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\WorldlineLogging\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\WorldlineLogging\\": "tests\/php"
+        }
+    },
+    "authors": [
+        {
+            "name": "CAWL"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "psr\/container": "^1.0",
+        "worldline\/modularity": "dev-main",
+        "dhii\/services": "^0.1.0-alpha2"
+    },
+    "require-dev": {
+        "phpunit\/phpunit": "^9.0"
+    }
+}

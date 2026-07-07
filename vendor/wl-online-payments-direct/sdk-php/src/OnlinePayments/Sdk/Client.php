@@ -3,10 +3,10 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk;
+namespace Cawl\Vendor\OnlinePayments\Sdk;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\CommunicatorLogger;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\MerchantClient;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\CommunicatorLogger;
+use Cawl\Vendor\OnlinePayments\Sdk\Merchant\MerchantClient;
 /**
  * Payment platform client.
  */

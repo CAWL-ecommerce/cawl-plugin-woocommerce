@@ -1,12 +1,12 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk;
+namespace Cawl\Vendor\OnlinePayments\Sdk;
 
 use Exception;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\RequestObject;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\DataObject;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\CommunicatorLogger;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\RequestObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\DataObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\CommunicatorLogger;
 /**
  * Interface CommunicatorInterface
  *

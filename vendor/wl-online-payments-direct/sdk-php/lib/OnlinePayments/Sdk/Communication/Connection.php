@@ -1,8 +1,8 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Communication;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\CommunicatorLogger;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\CommunicatorLogger;
 /**
  * Interface Connection
  *

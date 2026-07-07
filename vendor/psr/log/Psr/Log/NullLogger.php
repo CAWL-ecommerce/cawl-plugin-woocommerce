@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\Psr\Log;
+namespace Cawl\Vendor\Psr\Log;
 
 /**
  * This Logger can be used to avoid conditional log calls.

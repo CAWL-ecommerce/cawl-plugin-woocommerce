@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
 /*
  * This file is part of the Symfony package.
@@ -11,7 +11,7 @@ namespace Syde\Vendor\Cawl;
  * file that was distributed with this source code.
  */
 if (\PHP_VERSION_ID < 80000 && \extension_loaded('tokenizer')) {
-    class PhpToken extends \Syde\Vendor\Cawl\Symfony\Polyfill\Php80\PhpToken
+    class PhpToken extends \Cawl\Vendor\Symfony\Polyfill\Php80\PhpToken
     {
     }
 }

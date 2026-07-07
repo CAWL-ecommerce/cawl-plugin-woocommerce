@@ -1,25 +1,25 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk;
+namespace Cawl\Vendor\OnlinePayments\Sdk;
 
 use DateTime;
 use Exception;
 use UnexpectedValueException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Authentication\Authenticator;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\Connection;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ConnectionResponseInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\DefaultConnection;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ErrorResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\MetadataProvider;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\MetadataProviderInterface;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\MultipartDataObject;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\MultipartFormDataObject;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\RequestObject;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseBuilder;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseFactory;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\DataObject;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Logging\CommunicatorLogger;
+use Cawl\Vendor\OnlinePayments\Sdk\Authentication\Authenticator;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\Connection;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ConnectionResponseInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\DefaultConnection;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ErrorResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\MetadataProvider;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\MetadataProviderInterface;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\MultipartDataObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\MultipartFormDataObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\RequestObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseBuilder;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseFactory;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\DataObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Logging\CommunicatorLogger;
 /**
  * Class Communicator
  *

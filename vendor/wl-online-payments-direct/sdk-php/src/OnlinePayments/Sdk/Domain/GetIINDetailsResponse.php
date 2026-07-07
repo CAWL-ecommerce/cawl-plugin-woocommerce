@@ -3,7 +3,7 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Domain;
 
 use DateTime;
 use UnexpectedValueException;

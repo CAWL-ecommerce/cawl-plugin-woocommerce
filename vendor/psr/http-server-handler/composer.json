@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Syde\\Vendor\\Cawl\\Psr\\Http\\Server\\": "src\/"
+            "Cawl\\Vendor\\Psr\\Http\\Server\\": "src\/"
         }
     },
     "extra": {

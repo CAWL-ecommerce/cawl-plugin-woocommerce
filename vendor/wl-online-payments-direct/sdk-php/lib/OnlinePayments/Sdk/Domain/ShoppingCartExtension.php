@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Domain;
 
 use UnexpectedValueException;
 /**

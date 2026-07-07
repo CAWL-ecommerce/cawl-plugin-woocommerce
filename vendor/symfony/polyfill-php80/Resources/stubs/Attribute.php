@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
 /*
  * This file is part of the Symfony package.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Authentication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Authentication;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CommunicatorConfiguration;
+use Cawl\Vendor\OnlinePayments\Sdk\CommunicatorConfiguration;
 class V1HmacAuthenticator implements Authenticator
 {
     const AUTHORIZATION_ID = 'GCS';

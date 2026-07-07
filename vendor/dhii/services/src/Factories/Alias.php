@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Services\Factories;
+namespace Cawl\Vendor\Dhii\Services\Factories;
 
-use Syde\Vendor\Cawl\Dhii\Services\Service;
-use Syde\Vendor\Cawl\Psr\Container\ContainerInterface;
-use Syde\Vendor\Cawl\Psr\Container\NotFoundExceptionInterface;
+use Cawl\Vendor\Dhii\Services\Service;
+use Cawl\Vendor\Psr\Container\ContainerInterface;
+use Cawl\Vendor\Psr\Container\NotFoundExceptionInterface;
 /**
  * A service implementation for aliasing another service, with an optional fallback mechanism.
  *

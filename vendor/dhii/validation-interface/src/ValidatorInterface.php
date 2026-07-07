@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Validation;
+namespace Cawl\Vendor\Dhii\Validation;
 
-use Syde\Vendor\Cawl\Dhii\Validation\Exception\ValidationFailedExceptionInterface;
+use Cawl\Vendor\Dhii\Validation\Exception\ValidationFailedExceptionInterface;
 use RuntimeException;
 /**
  * Something that can validate a value.

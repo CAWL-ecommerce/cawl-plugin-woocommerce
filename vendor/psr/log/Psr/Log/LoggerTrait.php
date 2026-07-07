@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\Psr\Log;
+namespace Cawl\Vendor\Psr\Log;
 
 /**
  * This is a simple Logger trait that classes unable to extend AbstractLogger

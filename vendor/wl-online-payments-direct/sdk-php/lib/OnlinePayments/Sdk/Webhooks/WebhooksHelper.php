@@ -1,11 +1,11 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Webhooks;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Webhooks;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ConnectionResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseClassMap;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\ResponseFactory;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\WebhooksEvent;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ConnectionResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseClassMap;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\ResponseFactory;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\WebhooksEvent;
 /**
  * Class WebhooksHelper
  *

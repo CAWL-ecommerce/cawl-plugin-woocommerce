@@ -1,0 +1,30 @@
+{
+    "name": "cawl\/cawl-orders",
+    "description": "CAWL WooCommerce Orders features",
+    "type": "worldline-module",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\Orders\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\Orders\\Tests\\": "tests\/php"
+        }
+    },
+    "authors": [
+        {
+            "name": "CAWL"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "dhii\/services": "^0.1.0",
+        "psr\/container": "^1.1",
+        "worldline\/modularity": "dev-main"
+    },
+    "require-dev": {
+        "phpunit\/phpunit": "^9.0"
+    }
+}

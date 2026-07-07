@@ -1,6 +1,6 @@
 <?php
 
-namespace Syde\Vendor\Cawl\Robtimus\Multipart;
+namespace Cawl\Vendor\Robtimus\Multipart;
 
 /**
  * A multipart/form-data object.

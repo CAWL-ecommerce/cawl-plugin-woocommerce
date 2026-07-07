@@ -3,23 +3,23 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\Services;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\Services;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ApiException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\AuthorizationException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CallContext;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\InvalidResponseException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CalculateSurchargeRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CalculateSurchargeResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CurrencyConversionRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\CurrencyConversionResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\GetIINDetailsRequest;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\GetIINDetailsResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\TestConnection;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\IdempotenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\PlatformException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ReferenceException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\ValidationException;
+use Cawl\Vendor\OnlinePayments\Sdk\ApiException;
+use Cawl\Vendor\OnlinePayments\Sdk\AuthorizationException;
+use Cawl\Vendor\OnlinePayments\Sdk\CallContext;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\InvalidResponseException;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CalculateSurchargeRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CalculateSurchargeResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CurrencyConversionRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\CurrencyConversionResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\GetIINDetailsRequest;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\GetIINDetailsResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\TestConnection;
+use Cawl\Vendor\OnlinePayments\Sdk\IdempotenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\PlatformException;
+use Cawl\Vendor\OnlinePayments\Sdk\ReferenceException;
+use Cawl\Vendor\OnlinePayments\Sdk\ValidationException;
 /**
  * Services client interface.
  */

@@ -1,9 +1,9 @@
 <?php
 
-namespace Syde\Vendor\Cawl\Psr\Http\Client;
+namespace Cawl\Vendor\Psr\Http\Client;
 
-use Syde\Vendor\Cawl\Psr\Http\Message\RequestInterface;
-use Syde\Vendor\Cawl\Psr\Http\Message\ResponseInterface;
+use Cawl\Vendor\Psr\Http\Message\RequestInterface;
+use Cawl\Vendor\Psr\Http\Message\ResponseInterface;
 interface ClientInterface
 {
     /**

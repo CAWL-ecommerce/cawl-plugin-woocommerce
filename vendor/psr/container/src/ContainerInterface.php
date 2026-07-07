@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Psr\Container;
+namespace Cawl\Vendor\Psr\Container;
 
 /**
  * Describes the interface of a container that exposes methods to read its entries.

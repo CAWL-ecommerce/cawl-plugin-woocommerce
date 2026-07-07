@@ -1,10 +1,10 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Communication;
 
 use stdClass;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\CommunicatorConfiguration;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\ShoppingCartExtension;
+use Cawl\Vendor\OnlinePayments\Sdk\CommunicatorConfiguration;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\ShoppingCartExtension;
 /**
  * Class MetadataProvider
  *

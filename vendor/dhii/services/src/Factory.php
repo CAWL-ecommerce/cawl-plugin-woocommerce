@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Services;
+namespace Cawl\Vendor\Dhii\Services;
 
-use Syde\Vendor\Cawl\Dhii\Services\Factories\Constructor;
-use Syde\Vendor\Cawl\Psr\Container\ContainerInterface;
+use Cawl\Vendor\Dhii\Services\Factories\Constructor;
+use Cawl\Vendor\Psr\Container\ContainerInterface;
 /**
  * A simple implementation for a factory service.
  *

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Core;
+namespace Cawl\Vendor\Worldline\WorldlineForWoocommerce\Core;
 
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Properties\PluginProperties;
+use Cawl\Vendor\Worldline\Modularity\Properties\PluginProperties;
 class WorldlineProperties extends PluginProperties
 {
     /**

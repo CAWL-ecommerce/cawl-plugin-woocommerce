@@ -3,11 +3,11 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk;
+namespace Cawl\Vendor\OnlinePayments\Sdk;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\DataObject;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PayoutErrorResponse;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\PayoutResult;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\DataObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PayoutErrorResponse;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\PayoutResult;
 /**
  * Class DeclinedPayoutException
  *

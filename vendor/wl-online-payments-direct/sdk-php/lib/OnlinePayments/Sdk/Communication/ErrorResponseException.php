@@ -1,9 +1,9 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Communication;
 
 use RuntimeException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain\DataObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Domain\DataObject;
 /**
  * Class ErrorResponseException
  *

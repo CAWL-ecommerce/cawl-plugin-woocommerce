@@ -3,9 +3,9 @@
 /*
  * This file was automatically generated.
  */
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Merchant\PrivacyPolicy;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Merchant\PrivacyPolicy;
 
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\Communication\RequestObject;
+use Cawl\Vendor\OnlinePayments\Sdk\Communication\RequestObject;
 /**
  * Query parameters for Get Privacy Policy
  *

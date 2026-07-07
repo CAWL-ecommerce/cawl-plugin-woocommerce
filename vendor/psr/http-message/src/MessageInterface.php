@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Psr\Http\Message;
+namespace Cawl\Vendor\Psr\Http\Message;
 
 /**
  * HTTP messages consist of requests from a client to a server and responses

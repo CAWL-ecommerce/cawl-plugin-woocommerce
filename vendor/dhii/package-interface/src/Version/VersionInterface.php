@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl\Dhii\Package\Version;
+namespace Cawl\Vendor\Dhii\Package\Version;
 
 use Exception;
 use Stringable;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Syde\Vendor\Cawl\OnlinePayments\Sdk\Domain;
+namespace Cawl\Vendor\OnlinePayments\Sdk\Domain;
 
 use Exception;
 use stdClass;
 use UnexpectedValueException;
-use Syde\Vendor\Cawl\OnlinePayments\Sdk\JSON\JSONUtil;
+use Cawl\Vendor\OnlinePayments\Sdk\JSON\JSONUtil;
 /**
  * Class DataObject
  *

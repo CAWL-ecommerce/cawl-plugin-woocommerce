@@ -3,14 +3,14 @@
 /**
  * Uninstalls the plugin.
  *
- * @package Inpsyde\WorldlineForWoocommerce
+ * @package Worldline\WorldlineForWoocommerce
  */
 declare (strict_types=1);
-namespace Syde\Vendor\Cawl;
+namespace Cawl\Vendor;
 
-use Syde\Vendor\Cawl\Inpsyde\Modularity\Package;
-use Syde\Vendor\Cawl\Inpsyde\WorldlineForWoocommerce\Uninstall\DatabaseCleaner;
-use Syde\Vendor\Cawl\Psr\Container\ContainerInterface;
+use Cawl\Vendor\Worldline\Modularity\Package;
+use Cawl\Vendor\Worldline\WorldlineForWoocommerce\Uninstall\DatabaseCleaner;
+use Cawl\Vendor\Psr\Container\ContainerInterface;
 if (!\defined('WP_UNINSTALL_PLUGIN')) {
     die('Direct access not allowed.');
 }
@@ -21,7 +21,7 @@ if (!\file_exists($mainPluginFile)) {
 require $mainPluginFile;
 (static function () : void {
     $autoloadPath = __DIR__ . "/vendor/autoload.php";
-    if (\file_exists($autoloadPath) && !\class_exists('Syde\\Vendor\\Cawl\\Inpsyde\\WorldlineForWoocommerce\\CoreModule')) {
+    if (\file_exists($autoloadPath) && !\class_exists('Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\CoreModule')) {
         require $autoloadPath;
     }
     try {
