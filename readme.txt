@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.23
+Stable tag: 2.5.25
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,11 +81,21 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 == Changelog ==
 
-= 2.5.23 - 2026-06-09 =
+= 2.5.25 - 2026-07-16 =
+* Fixed: Security issues
+* Added: New signature type options for SEPA Direct Debit payment method
+* Added: Compatibility with PHP 8.4 and 8.5 (remove deprecation warnings)
+* Changed: Update Sofinco payment method name on the checkout
+
+= 2.5.24 - 2026-07-16 =
+* Fixed: Improved security by adding authorization checks, nonce validation, and upload restrictions for image upload and product-type management endpoints
+
+= 2.5.23 - 2026-06-23 =
 * Added: Changed integrator references
 * Fixed: Broken translations
 * Fixed: Order status after transaction cancellation
 * Fixed: Brand gateway directory names
+* Fixed: Added support for SVG logos in Hosted Checkout, including automatic sanitization
 
 = 2.5.22 - 2026-06-05 =
 * Added: Timeout settings for hosted checkout

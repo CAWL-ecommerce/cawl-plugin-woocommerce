@@ -6,9 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'cweagans\\Composer\\' => array($vendorDir . '/cweagans/composer-patches/src'),
     'Worldline\\Assets\\' => array($vendorDir . '/worldline/assets/src'),
     'OomphInc\\ComposerInstallersExtender\\' => array($vendorDir . '/oomphinc/composer-installers-extender/src'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
+    'Cawl\\Vendor\\enshrined\\svgSanitize\\' => array($vendorDir . '/enshrined/svg-sanitize/src'),
     'Cawl\\Vendor\\Worldline\\Wp\\HttpClient\\' => array($vendorDir . '/worldline/psr-18-wp-http-client/src'),
     'Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\WorldlinePaymentGateway\\' => array($baseDir . '/modules/cawl/cawl-payment-gateway/src'),
     'Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\WorldlineLogging\\' => array($baseDir . '/modules/cawl/cawl-logging/src'),
@@ -50,7 +52,6 @@ return array(
     'Cawl\\Vendor\\Worldline\\Logger\\' => array($baseDir . '/modules/cawl/logger/src'),
     'Cawl\\Vendor\\Worldline\\' => array($vendorDir . '/worldline/wp-context/src'),
     'Cawl\\Vendor\\Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
-    'Cawl\\Vendor\\Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Cawl\\Vendor\\Robtimus\\Multipart\\' => array($vendorDir . '/robtimus/multipart/src/Robtimus/Multipart'),
     'Cawl\\Vendor\\Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Cawl\\Vendor\\Psr\\Http\\Server\\' => array($vendorDir . '/psr/http-server-middleware/src', $vendorDir . '/psr/http-server-handler/src'),

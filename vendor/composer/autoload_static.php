@@ -4,16 +4,19 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
+class ComposerStaticInitbbd4576ab2c4df6ab195f2c7cf228dda
 {
     public static $files = array (
         '40d5e3dfc8382919cfc424fadf4d6299' => __DIR__ . '/..' . '/worldline/assets/inc/functions.php',
         'e18480b6df5e549df6777a438cf9b9ea' => __DIR__ . '/..' . '/worldline/assets/inc/bootstrap.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'c' =>
+        array (
+            'cweagans\\Composer\\' => 18,
+        ),
         'W' =>
         array (
             'Worldline\\Assets\\' => 17,
@@ -25,6 +28,7 @@ class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
         'C' =>
         array (
             'Composer\\Installers\\' => 20,
+            'Cawl\\Vendor\\enshrined\\svgSanitize\\' => 34,
             'Cawl\\Vendor\\Worldline\\Wp\\HttpClient\\' => 36,
             'Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\WorldlinePaymentGateway\\' => 70,
             'Cawl\\Vendor\\Worldline\\WorldlineForWoocommerce\\WorldlineLogging\\' => 63,
@@ -66,7 +70,6 @@ class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
             'Cawl\\Vendor\\Worldline\\Logger\\' => 29,
             'Cawl\\Vendor\\Worldline\\' => 22,
             'Cawl\\Vendor\\Symfony\\Polyfill\\Php80\\' => 35,
-            'Cawl\\Vendor\\Symfony\\Polyfill\\Mbstring\\' => 38,
             'Cawl\\Vendor\\Robtimus\\Multipart\\' => 31,
             'Cawl\\Vendor\\Psr\\Log\\' => 20,
             'Cawl\\Vendor\\Psr\\Http\\Server\\' => 28,
@@ -83,6 +86,10 @@ class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
     );
 
     public static $prefixDirsPsr4 = array (
+        'cweagans\\Composer\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
+        ),
         'Worldline\\Assets\\' =>
         array (
             0 => __DIR__ . '/..' . '/worldline/assets/src',
@@ -94,6 +101,10 @@ class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
         'Composer\\Installers\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
+        ),
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/enshrined/svg-sanitize/src',
         ),
         'Cawl\\Vendor\\Worldline\\Wp\\HttpClient\\' =>
         array (
@@ -258,10 +269,6 @@ class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
         'Cawl\\Vendor\\Symfony\\Polyfill\\Php80\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
-        ),
-        'Cawl\\Vendor\\Symfony\\Polyfill\\Mbstring\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
         'Cawl\\Vendor\\Robtimus\\Multipart\\' =>
         array (
@@ -819,7 +826,6 @@ class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
         'Cawl\\Vendor\\Robtimus\\Multipart\\MultipartMixed' => __DIR__ . '/..' . '/robtimus/multipart/src/Robtimus/Multipart/MultipartMixed.php',
         'Cawl\\Vendor\\Robtimus\\Multipart\\MultipartRelated' => __DIR__ . '/..' . '/robtimus/multipart/src/Robtimus/Multipart/MultipartRelated.php',
         'Cawl\\Vendor\\Robtimus\\Multipart\\Util' => __DIR__ . '/..' . '/robtimus/multipart/src/Robtimus/Multipart/Util.php',
-        'Cawl\\Vendor\\Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Cawl\\Vendor\\Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
         'Cawl\\Vendor\\Symfony\\Polyfill\\Php80\\PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/PhpToken.php',
         'Cawl\\Vendor\\UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
@@ -1069,6 +1075,17 @@ class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
         'Cawl\\Vendor\\Worldline\\Wp\\HttpClient\\Exception\\NetworkException' => __DIR__ . '/..' . '/worldline/psr-18-wp-http-client/src/Exception/NetworkException.php',
         'Cawl\\Vendor\\Worldline\\Wp\\HttpClient\\Exception\\RequestException' => __DIR__ . '/..' . '/worldline/psr-18-wp-http-client/src/Exception/RequestException.php',
         'Cawl\\Vendor\\Worldline\\Wp\\HttpClient\\Exception\\WpHttpClientException' => __DIR__ . '/..' . '/worldline/psr-18-wp-http-client/src/Exception/WpHttpClientException.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\ElementReference\\Resolver' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/ElementReference/Resolver.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\ElementReference\\Subject' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/ElementReference/Subject.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\ElementReference\\Usage' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/ElementReference/Usage.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\Exceptions\\NestingException' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/Exceptions/NestingException.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\Helper' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/Helper.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\Sanitizer' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/Sanitizer.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\data\\AllowedAttributes' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/AllowedAttributes.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\data\\AllowedTags' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/AllowedTags.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\data\\AttributeInterface' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/AttributeInterface.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\data\\TagInterface' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/TagInterface.php',
+        'Cawl\\Vendor\\enshrined\\svgSanitize\\data\\XPath' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/XPath.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Composer\\Installers\\AglInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AglInstaller.php',
         'Composer\\Installers\\AkauntingInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AkauntingInstaller.php',
@@ -1203,14 +1220,17 @@ class ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58
         'Worldline\\Assets\\Style' => __DIR__ . '/..' . '/worldline/assets/src/Style.php',
         'Worldline\\Assets\\Util\\AssetHookResolver' => __DIR__ . '/..' . '/worldline/assets/src/Util/AssetHookResolver.php',
         'Worldline\\Assets\\Util\\AssetPathResolver' => __DIR__ . '/..' . '/worldline/assets/src/Util/AssetPathResolver.php',
+        'cweagans\\Composer\\PatchEvent' => __DIR__ . '/..' . '/cweagans/composer-patches/src/PatchEvent.php',
+        'cweagans\\Composer\\PatchEvents' => __DIR__ . '/..' . '/cweagans/composer-patches/src/PatchEvents.php',
+        'cweagans\\Composer\\Patches' => __DIR__ . '/..' . '/cweagans/composer-patches/src/Patches.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit5adcd5667f93d5846d9d4ca5956fee58::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbbd4576ab2c4df6ab195f2c7cf228dda::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbbd4576ab2c4df6ab195f2c7cf228dda::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbbd4576ab2c4df6ab195f2c7cf228dda::$classMap;
 
         }, null, ClassLoader::class);
     }

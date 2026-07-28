@@ -2,4 +2,4 @@
 
 namespace Cawl\Vendor;
 
-return array('dependencies' => array(), 'version' => '2257a3083494eb98a90b');
+return array('dependencies' => array(), 'version' => 'c8cbc3fcd2571bf10a6e');
