@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.5.27
+Stable tag: 2.5.28
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,8 +81,15 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 == Changelog ==
 
+= 2.5.28 - 2026-08-13 =
+* Regular maintenance updates to enhance the integrity and security of the integration (low risk issues)
+* Fixed: Adjust minimum height due to iframe display on mobile
+* Changed: Adjust session timeout configuration with custom value
+* Added: Mark compatability with WooCommerce 11.0.0
+
 = 2.5.27 - 2026-07-28 =
 * Fixed: Webhooks race condition and duplicate order completion
+* Added: Mark compatibility with WordPress 10.9.4 and WooCommerce 7.0.2
 
 = 2.5.26 - 2026-07-23 =
 * Changed: Switching environment updates the PSPID value (PSPID is saved separately for test and live mode)
