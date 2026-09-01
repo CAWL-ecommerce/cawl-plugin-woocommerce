@@ -71,6 +71,9 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.29 - 2026-08-24**
+* Fixed: Reduced hosted tokenization session creation from four sessions to one
+
 **2.5.28 - 2026-08-13**
 * Regular maintenance updates to enhance the integrity and security of the integration (low risk issues)
 * Fixed: Adjust minimum height due to iframe display on mobile
