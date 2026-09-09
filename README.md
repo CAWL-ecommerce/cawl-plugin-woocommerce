@@ -71,6 +71,10 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.30 - 2026-09-03**
+* Changed: Update default configuration for groupCards options
+* Changed: Card saving now follows the "Enable Saved Cards" setting
+
 **2.5.29 - 2026-08-24**
 * Fixed: Reduced hosted tokenization session creation from four sessions to one
 
