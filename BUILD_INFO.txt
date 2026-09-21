@@ -1,1 +1,1 @@
-Built from Worldline-Plugins/cawl-plugin-woocomerce-PRE-RELEASE@v2.5.30 on Wed Sep  9 10:05:12 UTC 2026
+Built from Worldline-Plugins/cawl-plugin-woocomerce-PRE-RELEASE@v2.5.31 on Mon Sep 21 10:28:59 UTC 2026
