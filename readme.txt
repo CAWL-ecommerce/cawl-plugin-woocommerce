@@ -81,6 +81,9 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 == Changelog ==
 
+= 2.5.32 - 2026-09-30 =
+* Changed: Update the Chèque Vacances Connect payment method and its management
+
 = 2.5.31 - 2026-09-15 =
 * Fixed: Cart details are no longer discarded from the payment request due to rounding differences
 * Fixed: Cards saved on Hosted Checkout now appear with the other saved cards
