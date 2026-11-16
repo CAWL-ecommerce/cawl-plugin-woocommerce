@@ -71,6 +71,10 @@ If you encounter issues with the CAWL buttons not appearing after an update, pur
 
 ## Changelog
 
+**2.5.34 - 2026-11-10**
+* Fixed: Uninstall cleaning for multi-site configuration
+* Added: Mark compatability with WooCommerce 11.2.2
+
 **2.5.33 - 2026-10-19**
 * Changed: Remove the requirement to be logged in for the Mealvouchers payment method
 

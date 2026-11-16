@@ -4,7 +4,7 @@ Tags: woocommerce, CAWL, payments, ecommerce
 Requires at least: 6.3
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.33
+Stable tag: 2.5.34
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,10 @@ Automatic updates should work generally smoothly, but we still recommend you bac
 If you encounter issues with the CAWL buttons not appearing after an update, purge your website cache.
 
 == Changelog ==
+
+= 2.5.34 - 2026-11-10 =
+* Fixed: Uninstall cleaning for multi-site configuration
+* Added: Mark compatability with WooCommerce 11.2.2
 
 = 2.5.33 - 2026-10-19 =
 * Changed: Remove the requirement to be logged in for the Mealvouchers payment method
